@@ -58,7 +58,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'Derivative_Latest_VAT',
             'Derivative_Latest_Delivery_Cost',
             'Friendly_URL_2:url',
-            'Friendly_URL_3:url',
             'Friendly_URL_4:url',
         ],
     ]) ?>
