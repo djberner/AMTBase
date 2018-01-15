@@ -5,23 +5,19 @@
         <div ></div>
     </div>
     <div data-u="slides" style="cursor:default;position:relative;top:0px;left:30px;width:708px;height:356px;overflow:hidden;">
-        <div>
-            <img data-u="image" src="/images/cpost_car.jpg" />
-            <img data-u="thumb" src="/images/cpost_car.jpg" />
-        </div>
-        <div>
-            <img data-u="image" src="/images/cpost_car1.jpg" />
-            <img data-u="thumb" src="/images/cpost_car1.jpg" />
-        </div>
-        <div>
-            <img data-u="image" src="/images/cpost_car2.jpg" />
-            <img data-u="thumb" src="/images/cpost_car2.jpg" />
-        </div>
 
+            <?php
+            foreach ($allimages as $value) {
+                ?>
         <div>
-            <img data-u="image" src="/images/cpost_car3.jpg" />
-            <img data-u="thumb" src="/images/cpost_car3.jpg" />
+            <img data-u="image" src="/Vimages/<?=$value["Image_Name"] ?>" />
+            <img data-u="thumb" src="/Vimages/<?=$value["Image_Name"] ?>" />
         </div>
+                <?php
+            }
+            ?>
+
+
 
     </div>
     <!-- Thumbnail Navigator -->

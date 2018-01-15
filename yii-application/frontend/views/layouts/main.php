@@ -20,7 +20,7 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title><?= Html::encode($this->title) ?></title>
-    <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/header.php'); ?>
+    <?php include(CONST_ROOTDIR.'\views\site\includes/header.php'); ?>
 
 
 
@@ -30,8 +30,8 @@ AppAsset::register($this);
 </head>
 <body>
 <header>
-    <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/navbar.php'); ?>
-    <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/breadcrumbs.php'); ?>
+    <?php include(CONST_ROOTDIR.'\views\site\includes/navbar.php'); ?>
+    <?php include(CONST_ROOTDIR.'\views\site\includes/breadcrumbs.php'); ?>
 
 
 </header>
@@ -39,9 +39,9 @@ AppAsset::register($this);
 
 
 <footer id="footer">
-    <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/footer.php'); ?>
+    <?php include(CONST_ROOTDIR.'\views\site\includes/footer.php'); ?>
 </footer>
-<?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/js_includes.php'); ?>
+<?php include(CONST_ROOTDIR.'\views\site\includes/js_includes.php'); ?>
 
 
 </body>

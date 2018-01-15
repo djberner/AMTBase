@@ -21,33 +21,33 @@ $this->title = $content["Manufacturer_Name"].' '.$content["Model_Description"] ;
                     </div>
 
                     <div class="cpost_cars">
-                        <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/car_carousel.php'); ?>
+                        <?php include(CONST_ROOTDIR.'\views\site\includes/car_carousel.php'); ?>
 
                     </div>
 
                     <div class="clearfix"></div>
                     <div class="cpost_vdtls">
-                        <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/vehicle_details.php'); ?>
+                        <?php include(CONST_ROOTDIR.'\views\site\includes/vehicle_details.php'); ?>
 
 
                     </div><!--cpost_vdtls-->
                     <div class="clearfix"></div>
                     <div class="cpost_tabs">
-                        <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/table_stan_specs_options.php'); ?>
+                        <?php include(CONST_ROOTDIR.'\views\site\includes/table_stan_specs_options.php'); ?>
 
                     </div>
                     <div class="clearfix"></div>
                     <div class="cpost-emission">
-                        <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/bik_emmisions.php'); ?>
+                        <?php include(CONST_ROOTDIR.'\views\site\includes/bik_emmisions.php'); ?>
 
                     </div>
 
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-5 carrgt_blocksize">
                     <div class="car_postrgt">
-                        <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/car_custom_deal.php'); ?>
-                        <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/car_want_to_save.php'); ?>
-                        <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/car_share_links.php'); ?>
+                        <?php include(CONST_ROOTDIR.'\views\site\includes/car_custom_deal.php'); ?>
+                        <?php include(CONST_ROOTDIR.'\views\site\includes/car_want_to_save.php'); ?>
+                        <?php include(CONST_ROOTDIR.'\views\site\includes/car_share_links.php'); ?>
                     </div><!--car_postrgt-->
 
                 </div><!--col-lg-5-->
@@ -57,18 +57,18 @@ $this->title = $content["Manufacturer_Name"].' '.$content["Model_Description"] ;
 </section>
 
 <section class="hmpg_support cpost_support">
-    <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/why_lease_with_us.php'); ?>
+    <?php include(CONST_ROOTDIR.'\views\site\includes/why_lease_with_us.php'); ?>
 </section>
 
 <section class="customers-col cpostcutmr">
-    <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/customers_are_saying.php'); ?>
+    <?php include(CONST_ROOTDIR.'\views\site\includes/customers_are_saying.php'); ?>
 </section>
 
 <section class="vr_slider">
-    <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/recently_viewed_vehicles.php'); ?>
+    <?php include(CONST_ROOTDIR.'\views\site\includes/recently_viewed_vehicles.php'); ?>
 </section>
 
 <section class="keep_mail">
-    <?php include('C:\xampp\htdocs\yii-application\frontend\views\site\includes/email_newsletter.php'); ?>
+    <?php include(CONST_ROOTDIR.'\views\site\includes/email_newsletter.php'); ?>
 </section>
 
