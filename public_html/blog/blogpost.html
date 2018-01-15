@@ -1,0 +1,902 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Blogpost</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/media.css" rel="stylesheet" type="text/css">
+<link href="css/blog_nav.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="utilcarousel-files/utilcarousel/util.carousel.css" />
+<link rel="stylesheet" href="utilcarousel-files/utilcarousel/util.carousel.skins.css" />
+
+<link href="src/css/mightyslider.css" rel="stylesheet">
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+  <div class="top-head hidden-xs">
+    <div class="container">
+      <div class="col-md-12">
+        <ul>
+          <li><a href="#"><i><img src="images/icons/email.svg"></i>Email us</a></li>
+          <li><a href="#"><i><img src="images/icons/call.svg"></i>Request Callback</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid hidden-sm hidden-sm hidden-md hidden-lg">
+    <div class="row">
+      <div class="my_showroom">
+        <div class="dropdown showroom_drop">
+          <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> My Showroom
+          <p>Compare up to 3 vehicles</p>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <div class="show_header"> <img src="images/car1.jpg"> BMW 3 Series </div>
+            <div class="showbtn">
+              <ul>
+                <li><a href="#"><i><img src="images/delete.png"></i>Delete</a></li>
+                <li><a href="#"><i><img src="images/copy.png"></i>Copy</a></li>
+              </ul>
+            </div>
+            <div class="my-list">
+              <ul>
+                <li>
+                  <div class="list-col">
+                    <div class="list-pic"> <img src="images/icon1.png"> </div>
+                    <div class="lis-des">
+                      <h6>Second slot empty</h6>
+                      <p>Add more vehicles to compare deals</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-col">
+                    <div class="list-pic"> <img src="images/icon1.png"> </div>
+                    <div class="lis-des">
+                      <h6>Third slot empty</h6>
+                      <p>Add more vehicles to compare deals</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list-bottom-button"> <a href="#" class="btn btn-red"><i><img src="images/search.png"></i>go to my showroom</a> <a href="#" class="clear-btn">Clear list</a> </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="middle-head middle-head2">
+    <div class="container-fluid">
+      <div class="col-lg-6 col-md-7">
+        <nav class="navbar navbar-default menu menu2"> 
+          <!-- Brand and toggle get grouped for better mobile display -->
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle x collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="#"><img src="images/logo_blog.png" class="hidden-xs"> <img src="images/logo-mob.png" class="hidden-sm hidden-sm hidden-md hidden-lg"></a> <a href="#" class="icon-mob"><img src="images/mob-phone.png"></a> <a href="#" class="icon-mob"><img src="images/email-mob.png"></a> </div>
+          
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LEASING <span class="fa fa-angle-down"></span></a>
+                <ul class="dropdown-menu ldrop">
+                  <li><a href="#">Personal Car leasing</a></li>
+                  <li><a href="#">Business Car Leasing</a></li>
+                  <li><a href="#">Van Leasing</a></li>
+                  <li>
+                    <div class="lg-box">
+                      <p>Not Sure what you want?</p>
+                      <a href="#">Help me choose a car</a> </div>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">SPECIAL OFFERS</a></li>
+              <li><a href="#">Services</a></li>
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leasing Guide <span class="fa fa-angle-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">wear and tear</a></li>
+                  <li><a href="#">deprecation</a></li>
+                  <li><a href="#">Bik calculator</a></li>
+                  <li><a href="#">fuel cost calculator</a></li>
+                  <li><a href="#">Glossary of terms</a></li>
+                  <li><a href="#">end of contract</a></li>
+                  <li><a href="#">Frequently asked questions</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="fa fa-angle-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">About AMT</a></li>
+                  <li><a href="#">Meet the Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+			
+			
+			 <div class="top-head hidden-sm hidden-sm hidden-md hidden-lg">
+    <div class="container">
+      <div class="col-md-12">
+        <ul>
+          <li><a href="#"><i><img src="images/email.png"></i>Email us</a></li>
+          <li><a href="#"><i><img src="images/call.png"></i>Request Callback</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+          </div>
+          <!-- /.navbar-collapse --> 
+        </nav>
+      </div>
+      <div class="col-lg-6 col-md-5 top_rtl">
+        <div class="my_showroom">
+          <div class="dropdown showroom_drop">
+            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> My Showroom 
+            <p>COMPARE AND GET EXCLUSIVE OFFERS</p>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <div class="show_header"> <img src="images/car1.jpg"> BMW 3 Series </div>
+              <div class="showbtn">
+                <ul>
+                  <li><a href="#"><i><img src="images/delete.png"></i>Delete</a></li>
+                  <li><a href="#"><i><img src="images/copy.png"></i>Copy</a></li>
+                </ul>
+              </div>
+              <div class="my-list">
+                <ul>
+                  <li>
+                    <div class="list-col">
+                      <div class="list-pic"> <img src="images/icon1.png"> </div>
+                      <div class="lis-des">
+                        <h6>Second slot empty</h6>
+                        <p>Add more vehicles to compare deals</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-col">
+                      <div class="list-pic"> <img src="images/icon1.png"> </div>
+                      <div class="lis-des">
+                        <h6>Third slot empty</h6>
+                        <p>Add more vehicles to compare deals</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="list-bottom-button"> <a href="#" class="btn btn-red"><i><img src="images/search.png"></i>go to my showroom</a> <a href="#" class="clear-btn">Clear list</a> </div>
+            </ul>
+          </div>
+        </div>
+        <div class="feefo-rating">
+        <div class="feefologo"> <img src="images/feefo-logo.png"> </div>
+          <ul>
+            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+          </ul>
+          
+          
+        </div>
+        <div class="blog_phone">
+          <p>Mon-Fri 9am - 5.30pm</p>
+           <h4><img src="images/icons/phone.svg">0113 3502784</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="site-breadcrum site-breadcrum2">
+    <div class=" container">
+      <div class="col-md-12">
+        <div class="sitebread-inner">
+          <ul>
+            <li><a href="#"><img src="images/home.png"></a></li>
+            <li class="active active2">Blog</li>
+            <li class="active hidden-xs">AMT GROUP LAUNCHES FIRST EVER BLENDED FLEET SERVICE FOR SMES</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<div class="clearfix"></div>
+
+<section id="blog_gray2">
+<div class="container">
+<div class="amttext_row">
+<h2>AMT Group launched first ever blended fleet service for SMES</h2>
+<p><img src="images/watch.png" alt="">04 Jan 2017</p>
+<p><img src="images/men2.png" alt=""> Posted by AMT Leasing</p>
+
+</div>
+
+<div class="row">
+<div class="col-lg-12">
+<div class="amt_blogmg">
+  <img src="images/blog_center.jpg" alt="" class="img-responsive"> </div>
+
+</div>
+
+
+
+</div>
+
+<div class="row">
+<div class="amttext_part2">
+<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
+<div class="blog_shar">
+<div class="rotate_boto">
+<div class="shar_rotat"></div>
+<div class="rootatuptext">Share:</div>
+</div>
+
+<div class="socil_blog">
+	<div class="col-md-12">
+                    <ul class="social-network social-circle">
+                     
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-envelope-o"></i></a></li>
+                    </ul>				
+				</div>
+
+
+</div>
+
+
+
+</div>
+
+<div class="clearfix"></div>
+</div>
+<div class="col-lg-9">
+<div class="row">
+<div class="col-lg-12">
+<div class="skees_row"><h2>AMT Group, the premium and specialist vehicle solutions company, has launched a new consultative approach to vehicle procurement that seeks to address the challenges faced by time-poor, expertise-light vehicle decision makers in the SME sector.</h2></div>
+
+
+</div>
+
+</div>
+
+
+<div class="row">
+<div class="col-lg-12">
+<div class="amt_txtlnth">
+<p>AMT Group’s new ‘everything in one place’ proposition unites the Group’s vehicle rental, short term leasing and contract hire businesses and blends with unbiased, whole-of-market consultancy from a team of highly experienced vehicle leasing and rental experts. AMT believes this approach to be a first for the premium and specialist fleet sector in the UK.</p>
+<figure><img src="images/post_blg.jpg" alt="" class="img-responsive"></figure>
+<p>The consultancy team has been assembled by group sales director Neil Burroughs, who joined privately-owned AMT from Northgate plc in the summer of 2016 and quickly initiated an ambitious growth strategy. Burroughs has recruited former Northgate colleagues Gavin Kirkwood, Sabrina Brown, Gareth Hanvey and John Deacon, while Jonathan Pearce has also joined as group head of marketing. Further investments have been made in IT systems, back office support, and new showroom facilities in Salford and Birmingham. The company currently operates over 2,000 premium and specialist rental vehicles from seven UK branches.</p>
+<p>AMT is now able to provide a complete and unbiased vehicle solution across the UK. From one day to four years, through vehicle rental, short term leasing and contract hire & leasing, it believes this blended approach matched with expert consultation will help clients achieve long-term business objectives while supporting short-term financial or operational challenges.</p>
+<p>Neil Burroughs explains: “Sourcing company vehicles is one of the most complex procurement processes an SME will undertake, yet it’s a decision typically handled by someone without the necessary expertise and without independent external advice. This brings high risk and doesn’t make commercial sense. These businesses wouldn’t enter into capital finance or IT implementation projects without sound advice, nor would they expect to navigate tax or pension issues, for example, without expert counsel, yet until now it’s been quite the norm for vehicle fleet requirements to be addressed without a thorough and honest assessment of the requirement and options available.</p>
+
+
+<p>“Company vehicles are expensive, depreciating assets that serve both a functional and emotional role. To deliver the best value, choices made need to reflect the needs of the business with that of individual employees, balance short, medium and long term requirements, and factor in softer issues such as corporate brand and personal preferences. Good decisions are also made with an understanding of benefit in kind implications, emissions and road tax bandings, and total cost of ownership factors such as residual values, predicted maintenance costs and the consequences of early termination. If this isn’t your area of expertise, it’s a complex, time consuming and frustrating task, compounded by the fact most SMEs turn to providers with only a narrow view of the market, be that manufacturer marque or funding model.</p>
+<p>“Our view is this approach is outdated. It’s fraught with bias, absent of genuine choice, lacking in a candid and commercial understanding of the customer’s requirements, and exposes the customer to all the risk in the event of circumstances changing. We think there’s a better way, that’s better suited to today’s agile and cost conscious SME customers, and with directors with fleet responsibility saying that sourcing right vehicles, finding and negotiating the best deals, balancing the budget and managing the paperwork takes up as much as 40% of their time, we’re confident they’ll value the time saving too.”</p>
+
+<p>AMT’s ‘everything in one place’ proposition provides clients with dedicated support from a fleet consultant, who will listen and understand the business requirement before recommending a risk-free solution that supports the long- and short-term needs of the business. The consultancy is provided free of charge, and with a whole of market view and the scale to achieve the best prices on new vehicles, Burroughs is confident this unbiased approach will appeal to many SME business owners.</p>
+
+</div>
+
+
+<div class="tstmonils_text">
+<p><img src="images/arow.png" alt=""></p>
+<p>Simply put, our blended approach, experience and buying power means we can help customers acquire the vehicle they need, at the best possible price, and on the best terms. We believe this to be a unique, thoroughly modern and compelling proposition.</p>
+<div class="clearfix"></div>
+</div>
+<div class="information_link">
+For more information visit <a href="#">www.amtvehiclesolutions.co.uk.</a>
+</div>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="clearfix"></div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+<div class="clearfix"></div>
+
+
+
+
+<section class="all_postes all_postes2">
+
+
+<div class="container">
+<div class="col-md-12">
+<div class="title2">
+<h1>Latest blog posts by AMT</h1>
+</div>
+</div>
+
+
+<div class="hm_blog_col">
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="hm_blog">
+<span class="blog_catlable">Category</span>
+<figure>
+<div class="blog_overlay"></div>
+<div class="mktp"><img src="images/hm_blog_img1.jpg"></div>
+<div class="hmblogimg1">
+<img src="images/hm_blog_shape.png"></div>
+</figure>
+
+<div class="hmblog-inner">
+<h5><i class="fa fa-clock-o" aria-hidden="true"></i>24 May 2017
+</h5>
+<p>AMT Group launches first ever blended fleet service for SMES</p>
+
+<a href="#">Read article <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+
+</div>
+</div>
+
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 hm-blogcnter">
+<div class="hm_blog">
+<span class="blog_catlable">Category</span>
+<figure>
+<div class="blog_overlay"></div>
+<div class="mktp"><img src="images/hm_blog_img2.jpg"></div>
+
+<div class="hmblogimg1">
+<img src="images/hm_blog_shape.png"></div>
+</figure>
+
+<div class="hmblog-inner">
+<h5><i class="fa fa-clock-o" aria-hidden="true"></i>04 Jan 2017
+</h5>
+<p>AMT Group launches first ever blended fleet service for SMES</p>
+
+<a href="#">Read article <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+
+</div>
+</div>
+
+
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="hm_blog hm_blog_last">
+<span class="blog_catlable">Category</span>
+<figure>
+<div class="blog_overlay"></div>
+<div class="mktp"><img src="images/hm_blog_img3.jpg"></div>
+<div class="hmblogimg1">
+<img src="images/hm_blog_shape.png"></div>
+</figure>
+
+<div class="hmblog-inner">
+<h5><i class="fa fa-clock-o" aria-hidden="true"></i>24 May 2017
+</h5>
+<p>AMT Group launches first ever blended fleet service for SMES</p>
+
+<a href="#">Read article <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="row">
+<div class="col-md-12">
+<div class="hm_viewspobtn"><button type="submit" class="hm_redbtns">Read more blog posts<img src="images/hmright_arrow.png"> </button></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+ <div class="clearfix"></div>
+
+</section>
+
+
+
+
+<section class="keep_mail">
+  <div class="container">
+    <div class="row">
+      <div class="news_letter">
+        <article>
+          <h2>Sign up to our newsletter</h2>
+          <p>Keep up to date with our latest special offers and industry news</p>
+        </article>
+      </div>
+    </div>
+    <div class="row">
+      <div class="home-newsletter">
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Name">
+          <input type="email" class="form-control" placeholder="Email">
+          <span class="input-group-btn hidden-xs">
+          <button class="btn btn-theme" type="submit">Subscribe <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+          </span> </div>
+        <div class="hidden-sm hidden-lg hidden-md text-center">
+          <button type="button" class=" button_in">SUBSCRIBE <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="newsletr_txt">
+          <div class="checkbox">
+            <input id="checkbox1" type="checkbox">
+            <label for="checkbox1"> Marketing Communications Agreement<br />
+              <span>By entering your details above you are consenting to receive emails and SMS containing offers and informational updates from AMT Contract Hire and Leasing. To opt-out from any marketing communications, please tick this box. Your details will not be shared with any third parties. For more information please read our<a href="#"> Privacy Policy </a>for further details.</span> </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer id="footer">
+  <div class="bottomline">
+    <div class="container">
+      <div class="row">
+        <div class="footr_type">
+          <div class="col-lg-3 col-sm-3 col-md-3">
+            <dIV class="footer-single">
+              <div class="logo">
+                <h2>AMT Contract Hire & Leasing</h2>
+              </div>
+              <address>
+              <p>AMT Contract Hire & <br>
+			    Leasing Ltd, AMT House,<br>
+                174 Armley Road<br>
+                Leeds, Ls122QH</p>
+              <p>Tel: 0113 387 4241</p>
+              <p>Fax: 0844 826 23 01</p>
+              </address>
+            </dIV>
+          </div>
+          <div class="col-lg-3 col-sm-3 col-md-3">
+            <div class="logo">
+              <h2>Leasing</h2>
+            </div>
+            <div class="listing_line">
+              <ul>
+                <li><a class="nav-link js-scroll-trigger" href="#home1">Personal car leasing</a></li>
+                <li><a class="nav-link js-scroll-trigger"  href="#about">Business car leasing</a></li>
+                <li><a  class="nav-link js-scroll-trigger" href="#works_row">Van leasing</a></li>
+                <li><a class="nav-link js-scroll-trigger" href="#ourservice">Special offers</a></li>
+                <li><a class="nav-link js-scroll-trigger" href="#whyus">My Showroom</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3 col-md-3">
+            <div class="logo">
+              <h2>More</h2>
+            </div>
+            <div class="listing_line">
+              <ul>
+                <li><a class="nav-link js-scroll-trigger" href="#home1">Services</a></li>
+                <li><a class="nav-link js-scroll-trigger"  href="#about">Leasing guides</a></li>
+                <li><a  class="nav-link js-scroll-trigger" href="#works_row">About AMT</a></li>
+                <li><a class="nav-link js-scroll-trigger" href="#ourservice">Blog</a></li>
+                <li><a class="nav-link js-scroll-trigger" href="#whyus">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3 col-md-3">
+            <div class="logo">
+              <h2>Connect with us</h2>
+            </div>
+            <div class="demopadding">
+              <div class="icon social fb"><i class="fa fa-facebook"></i></div>
+              <div class="icon social tw"><i class="fa fa-twitter"></i></div>
+              <div class="icon social in"><i class="fa fa-youtube"></i></div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="foter_textline">
+      <p>Registered Address: AMT Contract Hire & Leasing Ltd, AMT House, 174 Armley Road, Leeds, LS12 2QH, Tel: 0113 387 4241, Fax: 0844 826 2301
+        Please note: Whilst every effort has been made to ensure the accuracy of the vehicle information and images, some errors may occur. It is important that you do not rely solely on the information, images or prices shown but to check with AMT Contract Hire & Leasing about any items that may affect your decision to lease this vehicle. Finance is subject to status. © </p>
+      <p>AMT Contract Hire & Leasing Ltd is authorised and regulated by the Financial Conduct Authority: FRN0308831. AMT Contract Hire & Leasing is a credit broker and not a lender.
+BVRLA Membership No: 1559 | Data Protection Reg: ZA209348 | Registered in England and Wales No: 04504282 | VAT Registration Number: GB820808738
+AMT Contract Hire & Leasing Ltd is subsidiary of AMT Global Investments Ltd - Registered in England and Wales No: 05904790</p>
+    </div>
+    <div class="home_provider">
+      <div class="row">
+        <div class="col-lg-12">
+          <p> <img src="images/footer-logos/BVRLA.png" alt=" " class="img-responsive"> <img src="images/footer-logos/FCA.png" alt=" " class="img-responsive"> <img src="images/footer-logos/LEX.png" alt=" " class="img-responsive"> <img src="images/footer-logos/ARVAL.png" alt=" " class="img-responsive"> <img src="images/footer-logos/ALD.png" alt=" " class="img-responsive"><img src="images/footer-logos/hitachi.png" alt=" " class="img-responsive"><img src="images/footer-logos/leasys.png" alt=" " class="img-responsive"> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-12 col-md-9 col-xs-12">
+          <div class="bottom_nav">
+            <ul class="blacktp">
+              <li><a class="active" href="#Site map ">Site map </a></li>
+              <li><a href="#terms"> Terms & conditions </a></li>
+              <li><a href="#treating">Treating Customers Fairly </a></li>
+              <li><a href="#complaints">Complaints </a></li>
+              <li><a href="#cookie"> Cookie Policy </a></li>
+              <li><a href="#initial">initial disclosure </a></li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-3 col-xs-12">
+          <div class="author_text">Website by <span>Parallax</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/group.js"></script> 
+<script src="utilcarousel-files/utilcarousel/jquery.utilcarousel.min.js"></script>
+
+<script src="js/slider/js/retina.js" type="text/javascript"></script>
+<script src="js/slider/js/jquery.easing-1.3.pack.js" type="text/javascript"></script>
+<script src="js/slider/js/jquery.simplr.smoothscroll.js" type="text/javascript"></script>
+
+<script src="js/slider/js/google-code-prettify/prettify.js"></script>
+<script src="js/slider/js/google-code-prettify/lang-css.js"></script>
+
+<script src="src/js/mightyslider.min.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+
+<script src="js/slider/js/jquery.requestAnimationFrame.js"></script>
+<script src="js/slider/js/ilightbox/js/ilightbox.packed.js"></script>
+
+
+
+<script>
+			function getScrollbarWidth() {
+				var outer = document.createElement("div");
+				outer.style.visibility = "hidden";
+				outer.style.width = "100px";
+				document.body.appendChild(outer);
+				
+				var widthNoScroll = outer.offsetWidth;
+				// force scrollbars
+				outer.style.overflow = "scroll";
+				
+				// add innerdiv
+				var inner = document.createElement("div");
+				inner.style.width = "100%";
+				outer.appendChild(inner);        
+				
+				var widthWithScroll = inner.offsetWidth;
+				
+				// remove divs
+				outer.parentNode.removeChild(outer);
+				
+				return widthNoScroll - widthWithScroll;
+			}
+
+			jQuery(document).ready(function($){
+				var $win = $(window),
+					isTouch = !!('ontouchstart' in window),
+					clickEvent = isTouch ? 'tap' : 'click',
+					scrollbarWidth = getScrollbarWidth();
+
+				$('body').append('<style>html .ilightbox-noscroll { padding-right: ' + scrollbarWidth + 'px; } html .ilightbox-noscroll #navigation { padding-right: ' + (scrollbarWidth + 20) + 'px; }</style>');
+
+				
+				
+				// Cycling By Slides Example
+				(function(){
+					var $carousel = $('#cycling_by_slides'),
+					$frame = $('.frame', $carousel),
+					$controls = $('div.controls', $carousel),
+					$scrollbar = $('div.scrollbar', $carousel);
+					$frame.mightySlider({
+						speed: 300,
+						easing: 'easeOutExpo',
+
+						// Navigation options
+						navigation: {
+							navigationType: 'centered',
+							activateOn: clickEvent
+						},
+
+						// Scrolling options
+						scrolling: {
+							scrollBy: 0,
+							scrollSource: null
+							
+						},
+
+						// Scrollbar options
+						scrollBar: {
+							scrollBarSource: $scrollbar
+						},
+						
+						// Buttons options
+						buttons: {
+							prev: $('.prev', $controls),
+							next: $('.next', $controls)
+						},
+						
+						// Cycling options
+						cycling: {
+							cycleBy: 'slides',
+							pauseTime: 1500,
+							pauseOnHover: 1
+						}
+					});
+
+					var API = $frame.data().mightySlider;
+
+					// Method calling buttons
+					$carousel.on(clickEvent, 'button[data-action]', function () {
+						var action = $(this).data('action');
+
+						switch (action) {
+							case 'add':
+								API.add('<li>' + API.slides.length + '</li>');
+								break;
+							case 'remove':
+								API.remove(-1);
+								break;
+							default:
+								API[action]();
+						}
+					});
+				})();
+				// End of Cycling By Slides Example
+				
+
+			
+			});
+		</script>
+
+
+<script>
+$(document).ready(function(){
+    jQuery.goup({trigger: 10,
+	containerSize:40,
+   bottomOffset: 50,
+    locationOffset: 50,
+    title: 'Back To Top',
+   containerColor: '840b23',
+      });
+	  
+	 // $('.panel-heading a').click(function() {
+   // $('.panel-heading').removeClass('active');
+    
+    
+    //if(!$(this).closest('.panel').find('.panel-collapse').hasClass('in'))
+       // $(this).parents('.panel-heading').addClass('active');
+ //});
+	  
+	  $('#testimonial').utilCarousel({
+					showItems : 1,
+					breakPoints : [[1920, 1]],
+					autoPlay : true,
+					navigationText : ['<i class="fa fa-long-arrow-left"></i>', '<i class="fa fa-long-arrow-right"></i>'],
+					navigation : true
+					
+				});
+				
+				$('#hm_specialofr').utilCarousel({
+					pagination : true,
+					navigationText : ['<i class="icon-left-open-big"></i>', '<i class=" icon-right-open-big"></i>'],
+					breakPoints : [[1920, 3], [1200, 3], [992, 2],  [767, 1], [480, 1],  ], 
+					navigation : true,
+					rewind : false
+				});
+				
+			
+				
+});
+</script> 
+
+
+
+<script type="text/javascript">
+    /**
+     * Get viewport/window size (width and height).
+     *
+     * @return {Object}
+     */
+    function getViewport() {
+        var e = window,
+            a = 'inner';
+        if (!('innerWidth' in window)) {
+            a = 'client';
+            e = document.documentElement || document.body;
+        }
+        return {
+            width: e[a + 'Width'],
+            height: e[a + 'Height']
+        }
+    }
+
+    jQuery(document).ready(function($) {
+        var $win = $(window),
+            isTouch = !!('ontouchstart' in window),
+            clickEvent = isTouch ? 'tap' : 'click';
+
+        (function(){
+            /**
+             * Calculate the slides width in percent based on the parent's width.
+             *
+             * @return {String}
+             */
+            function calculator(width){
+                var percent = '60%';
+
+                if (width <= 480) {
+                    percent = '100%';
+                }
+                else if (width <= 767) {
+                    percent = '55%';
+                }
+
+                return percent;
+            };
+
+            // Global slider's DOM elements
+            var $example = $('#example'),
+                $frame = $('.frame', $example),
+               $details = $('div.details', $example),
+               $title = $('#title', $details),
+               $photographer = $('#photographer', $details),
+                $description = $('#description', $details),
+                lastIndex = -1;
+
+            // Calling new mightySlider class
+            var slider = new mightySlider($frame, {
+                speed: 1000,
+                startAt: 1,
+                autoScale: 1,
+                easing: 'easeOutExpo',
+                
+                // Navigation options
+                navigation: {
+                    slideSize: calculator(getViewport().width),
+                    keyboardNavBy: 'slides',
+                    activateOn: clickEvent
+                },
+
+                // Dragging options
+                dragging: {
+                    swingSpeed: 0.12,
+                    onePage: 1
+                },
+
+                // Buttons options
+                buttons: !isTouch ? {
+                    prev: $('a.mSPrev', $frame),
+                    next: $('a.mSNext', $frame)
+                } : {},
+				
+				
+
+                // Cycling options
+                cycling: {
+                    cycleBy: 'slides'
+                }
+            },
+
+            // Register callbacks to the events
+            {
+                // Register mightySlider :active event callback
+                active: function(name, index) {
+                    var slideOptions = this.slides[index].options;
+
+                    if (lastIndex !== index)
+                        $details.stop().animate({ opacity: 0 }, 500, function(){
+                            $title.html(slideOptions.title);
+                            $photographer.html(slideOptions.photographer);
+                            $description.html(slideOptions.description);
+                            $details.animate({ opacity: 1 }, 500);
+                        });
+
+                    lastIndex = index;
+                }
+            }).init();
+
+            // Register window :resize event callback
+            $win.resize(function(){
+                // Update slider options using 'set' method
+                slider.set({
+                    navigation: {
+                        slideSize: calculator(getViewport().width)
+                    }
+                });
+            });
+        })();
+    });
+			
+	
+</script>
+
+
+
+
+
+<script>
+	
+	/* wow animation put it after Document.ready  */
+wow = new WOW(
+{
+    mobile: false
+});
+wow.init();
+	
+	</script>
+</body>
+</html>
