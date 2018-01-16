@@ -6,9 +6,7 @@ return [
         'encodeParams' => false,
     ],
     [
-        'pattern' => 'car-leasing',
-        'route' => 'car-leasing/manulist',
-        'encodeParams' => false,
-    ],
+        'car-leasing' => 'site/manulist',
 
+    ],
 ];

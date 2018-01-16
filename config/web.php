@@ -46,7 +46,9 @@ $config = [
          'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' =>  require 'urls.php',
+             'rules' => [
+                 'car-leasing' => 'site/manulist',
+             ],
         ],
     ],
     'params' => $params,
