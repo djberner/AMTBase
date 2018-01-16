@@ -123,5 +123,8 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-
+    public function actionManulist()
+    {
+        return $this->render('manulist');
+    }
 }
