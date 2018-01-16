@@ -87,7 +87,7 @@ $this->title = $page["PageTitle"] ;
                         <div class="sm_cardtl">
                             <div class="sm_cardtlimg">
                                 <figure> <img class="img-responsive" src="/images/srchm_car1.jpg"></figure>
-                                <figcaption>XXXX deals available</figcaption>
+                                <figcaption><?=$samplevehicle["NumDealsAvailable"][$i] ?> deals available</figcaption>
                             </div>
                             <div class="sm_carcontt">
 
@@ -116,7 +116,7 @@ $this->title = $page["PageTitle"] ;
                                             </div>
                                             <div class="col-lg-7 col-md-6 col-sm-6">
                                                 <div class="sm_carperrgt">
-                                                    <h3>£XXX.XX</h3>
+                                                    <h3><?=Yii::$app->formatter->asCurrency(($samplevehicle["Derivative_Monthly_Rental_Price"][$i])*CONST_VAT)?></h3>
                                                 </div>
                                             </div>
                                             <div class="col-lg-5 col-md-6 col-sm-6">
@@ -127,7 +127,7 @@ $this->title = $page["PageTitle"] ;
                                             </div>
                                             <div class="col-lg-7 col-md-6 col-sm-6">
                                                 <div class="sm_carperrgt">
-                                                    <h3>£XXX.XX</h3>
+                                                    <h3><?=Yii::$app->formatter->asCurrency(($samplevehicle["Derivative_Monthly_Rental_Price"][$i]))?></h3>
                                                 </div>
                                             </div>
                                         </div><!--row-->

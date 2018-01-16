@@ -8,6 +8,8 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+Yii::$app->language='en-GB';
+
 class ProductController extends Controller
 {
  public function actionCategory($categories)
@@ -29,7 +31,12 @@ class ProductController extends Controller
             $page = Yii::$app->db->createCommand('SELECT * FROM tblpages WHERE PageName="manufacturer_'.strtolower ($params[0]).'"')->queryOne();
             $vehiclemodels = Yii::$app->db->createCommand('SELECT DISTINCT Range_Name FROM tblbase WHERE Manufacturer_Name="'.$params[0].'" ORDER BY Range_Name ')->queryAll();
             foreach ($vehiclemodels as $arr_veh_model) {
-                $samplevehiclemodels = Yii::$app->db->createCommand('SELECT * FROM tblbase WHERE Range_Name="'.$arr_veh_model["Range_Name"].'"')->queryOne();
+                $samplevehiclemodels = Yii::$app->db->createCommand('SELECT tblbase.*, tblfunder.Derivative_Monthly_Rental_Price FROM tblbase JOIN tblfunder
+    ON tblbase.Derivative_CAP_Code = tblfunder.Derivative_CAP_Code WHERE Range_Name="'.$arr_veh_model["Range_Name"].'" ORDER BY tblfunder.Derivative_Monthly_Rental_Price ')->queryOne();
+                $samplevehiclemodelscount = Yii::$app->db->createCommand('SELECT count(Range_Name) as NumDealsAvailable  FROM tblbase JOIN tblfunder
+    ON tblbase.Derivative_CAP_Code = tblfunder.Derivative_CAP_Code WHERE Range_Name="'.$arr_veh_model["Range_Name"].'"')->queryOne();
+                $samplevehiclemodels += [ "NumDealsAvailable" => $samplevehiclemodelscount['NumDealsAvailable'] ];
+
                 if (isset($samplevehicle)){
                     $samplevehicle = array_merge_recursive($samplevehicle, $samplevehiclemodels);
                 }else{
