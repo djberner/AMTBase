@@ -5,8 +5,7 @@ return [
         'route' => 'product/category',
         'encodeParams' => false,
     ],
-    [
-        'car-leasing' => 'site/manulist',
+    'car-leasing' => 'site/manulist',
 
-    ],
+
 ];

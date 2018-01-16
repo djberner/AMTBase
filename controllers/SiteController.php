@@ -125,6 +125,12 @@ class SiteController extends Controller
     }
     public function actionManulist()
     {
-        return $this->render('manulist');
+        $page = Yii::$app->db->createCommand('SELECT * FROM tblpages WHERE PageName="manufacturer"')->queryOne();
+        $manulogos = Yii::$app->db->createCommand('SELECT * FROM tlogos')->queryAll();
+
+
+        return $this->render('manulist',array('page'=>$page,'manulogos'=>$manulogos));
+
+
     }
 }

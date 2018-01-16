@@ -113,18 +113,14 @@ $this->title = $page["PageTitle"] ;
             <div class="hm_carbrands">
                 <div class="row">
                     <?php
-                    foreach ($allimages as $value) {
+                    foreach ($manulogos as $value) {
                         ?>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 hm_brandresize">
                             <div class="hm_branddtl">
-                                <a href="/car-leasing/<?=$manulogos["fmanu"] ?>"><div class="hm_brandimg"><img src="images/brands/<?=$manulogos["flogo"] ?>"></div>
-                                    <div class="hm_brandnam"><?=$manulogos["fmanu"] ?> <img src="images/hmbrand_arrow.png"></div></a>
+                                <a href="/car-leasing/<?=$value["fmanu"] ?>"><div class="hm_brandimg"><img src="images/brands/<?=$value["flogo"] ?>"></div>
+                                    <div class="hm_brandnam"><?=$value["fmanu"] ?> <img src="images/hmbrand_arrow.png"></div></a>
                             </div>
                         </div><!--col-lg-2-->
-                        <div>
-                            <img data-u="image" src="/Vimages/<?=$value["Image_Name"] ?>" />
-                            <img data-u="thumb" src="/Vimages/<?=$value["Image_Name"] ?>" />
-                        </div>
                         <?php
                     }
                     ?>
