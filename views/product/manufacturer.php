@@ -4,6 +4,7 @@
 
 $this->title = $page["PageTitle"] ;
 ?>
+
 <section class="audi-title">
     <div class="container">
         <div class="col-md-12">
@@ -56,7 +57,8 @@ $this->title = $page["PageTitle"] ;
         <div class="adv_dealsbuttons">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="adv_dealsfound">XXXX deals found</div>
+                    <div class="adv_dealsfound">
+                        <?= array_sum($samplevehicle["NumDealsAvailable"]);?> deals found</div>
                 </div><!---col-lg-6-->
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="advpg_sortby">
@@ -79,14 +81,14 @@ $this->title = $page["PageTitle"] ;
             <div class="sm_carinfo">
                 <div class="row">
                     <?php
-                    for ($i = 0; $i<count($samplevehicle["Vehicle_Type"]); $i++)
+                    for ($i = 0; $i<count($samplevehicle["Range_Name"]); $i++)
                     {
 
                     ?>
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="sm_cardtl">
                             <div class="sm_cardtlimg">
-                                <figure> <img class="img-responsive" src="/images/srchm_car1.jpg"></figure>
+                                <figure> <img class="img-responsive" src="/Vimages/<?=$samplevehicle["Image_Set_ID"][$i] ?>.jpg"></figure>
                                 <figcaption><?=$samplevehicle["NumDealsAvailable"][$i] ?> deals available</figcaption>
                             </div>
                             <div class="sm_carcontt">
@@ -102,7 +104,7 @@ $this->title = $page["PageTitle"] ;
                                     </div>
                                     <div class="sm_carfeatur">
                                         <ul>
-                                            <li>MPG<span> From 38mpg to 57.7mpg </span></li>
+                                            <li>MPG<span> From <?=$samplevehicle["UrbanMPG"][$i] ?>mpg to <?=$samplevehicle["ExtraUrbanMPG"][$i] ?>mpg </span></li>
                                             <li>Co2<span> From XX g/km to 130g/km</span></li>
                                         </ul>
                                     </div>

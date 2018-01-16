@@ -31,21 +31,50 @@ class ProductController extends Controller
             $page = Yii::$app->db->createCommand('SELECT * FROM tblpages WHERE PageName="manufacturer_'.strtolower ($params[0]).'"')->queryOne();
             $vehiclemodels = Yii::$app->db->createCommand('SELECT DISTINCT Range_Name FROM tblbase WHERE Manufacturer_Name="'.$params[0].'" ORDER BY Range_Name ')->queryAll();
             foreach ($vehiclemodels as $arr_veh_model) {
-                $samplevehiclemodels = Yii::$app->db->createCommand('SELECT tblbase.*, tblfunder.Derivative_Monthly_Rental_Price FROM tblbase JOIN tblfunder
-    ON tblbase.Derivative_CAP_Code = tblfunder.Derivative_CAP_Code WHERE Range_Name="'.$arr_veh_model["Range_Name"].'" ORDER BY tblfunder.Derivative_Monthly_Rental_Price ')->queryOne();
+                $samplevehiclemodels = Yii::$app->db->createCommand('SELECT tblbase.*, tblfunder.Derivative_Monthly_Rental_Price,timage.Image_Set_ID FROM tblbase JOIN tblfunder
+    ON tblbase.Derivative_CAP_Code = tblfunder.Derivative_CAP_Code JOIN timage ON tblbase.Derivative_CAP_ID=timage.CAP_Id WHERE Range_Name="'.$arr_veh_model["Range_Name"].'" ORDER BY tblfunder.Derivative_Monthly_Rental_Price ')->queryOne();
                 $samplevehiclemodelscount = Yii::$app->db->createCommand('SELECT count(Range_Name) as NumDealsAvailable  FROM tblbase JOIN tblfunder
     ON tblbase.Derivative_CAP_Code = tblfunder.Derivative_CAP_Code WHERE Range_Name="'.$arr_veh_model["Range_Name"].'"')->queryOne();
-                $samplevehiclemodels += [ "NumDealsAvailable" => $samplevehiclemodelscount['NumDealsAvailable'] ];
+                $samplevehicleurbanmpg = Yii::$app->db->createCommand('SELECT Technical_Short_Description,Technical_Value FROM tblspec  
+  WHERE Derivative_CAP_Code="'.$samplevehiclemodels["Derivative_CAP_Code"].'" AND Technical_Short_Description IN ("EC Urban (mpg)","EC Urban")')->queryOne();
+                $samplevehiclempg = Yii::$app->db->createCommand('SELECT Technical_Short_Description,Technical_Value FROM tblspec  
+  WHERE Derivative_CAP_Code="'.$samplevehiclemodels["Derivative_CAP_Code"].'" AND Technical_Short_Description IN ("EC Extra Urban (mpg)","EC Extra Urban")')->queryOne();
+        /*        echo "<pre>";
+                var_dump($samplevehiclemodelscount);
+                echo "</pre>";*/
 
-                if (isset($samplevehicle)){
-                    $samplevehicle = array_merge_recursive($samplevehicle, $samplevehiclemodels);
-                }else{
-                    $samplevehicle = $samplevehiclemodels;
+
+
+
+
+                if (is_array($samplevehiclemodels)){
+                    if (isset($samplevehiclemodelscount)) {
+                        $samplevehiclemodels += [ "NumDealsAvailable" => $samplevehiclemodelscount['NumDealsAvailable'] ];
+                    }else{
+                        $samplevehiclemodels += [ "NumDealsAvailable" => '0' ];
+                    }
+                    if (is_array($samplevehiclempg)) {
+                        $samplevehiclemodels += [ "ExtraUrbanMPG" => $samplevehiclempg['Technical_Value'] ];
+                    }else{
+                        $samplevehiclemodels += [ "ExtraUrbanMPG" => '0' ];
+                    }
+                    if (is_array($samplevehicleurbanmpg)) {
+                        $samplevehiclemodels += [ "UrbanMPG" => $samplevehicleurbanmpg['Technical_Value'] ];
+                    }else{
+                        $samplevehiclemodels += [ "UrbanMPG" => '0' ];
+                    }
+                    if (isset($samplevehicle)){
+                        $samplevehicle = array_merge_recursive($samplevehicle, $samplevehiclemodels);
+                    }else{
+                        $samplevehicle = $samplevehiclemodels;
+                    }
+
                 }
 
             }
             return $this->render('manufacturer',array('page'=>$page,'samplevehicle'=>$samplevehicle));
 
         }
+
      }
 }
