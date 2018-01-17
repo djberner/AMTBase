@@ -72,8 +72,8 @@ class ProductController extends Controller
                 }
 
             }
-            
-            return $this->render('manufacturer',array('page'=>$page,'samplevehicle'=>$samplevehicle));
+
+            return $this->render('manufacturer',array('page'=>$page,'samplevehicle'=>$samplevehicle,'vehiclemodels'=>$vehiclemodels));
 
         }
 

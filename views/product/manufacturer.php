@@ -27,12 +27,18 @@ $this->title = $page["PageTitle"] ;
                 <form>
                     <div class="form-group">
                         <label for="">I know what Audi model I’m looking for</label>
-                        <select class="form-control">
+                        <select class="form-control"  onChange="window.location.href=this.value">
                             <option>Choose your desired model</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <?php
+                            foreach ($vehiclemodels AS $vehiclerange) {
+
+                                ?>
+                                <option  value="/car-leasing/<?=$samplevehicle["Manufacturer_Name"][0] ?>/<?=$vehiclerange["Range_Name"]?>"><?=$vehiclerange["Range_Name"]?></option>
+                                <?php
+                            }
+
+                            ?>
+
                         </select>
                     </div>
                     <div class="form-group">
