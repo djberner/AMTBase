@@ -8,8 +8,8 @@ return [
     'car-leasing' => 'site/manulist',
     'about' => 'site/about',
     [
-        'pattern' => 'searchrestapi/<categories:.*>',
-        'route' => 'searchrest/category',
+        'pattern' => 'resultsapis/<categories:.*>',
+        'route' => 'resultsapi/category',
         'encodeParams' => false,
     ],
 ];
