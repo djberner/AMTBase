@@ -6,6 +6,6 @@ return [
         'encodeParams' => false,
     ],
     'car-leasing' => 'site/manulist',
-
+    'about' => 'site/about',
 
 ];

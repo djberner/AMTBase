@@ -130,7 +130,5 @@ class SiteController extends Controller
 
 
         return $this->render('manulist',array('page'=>$page,'manulogos'=>$manulogos));
-
-
     }
 }
