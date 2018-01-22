@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0dfef77-9a91-4af3-b798-dd3da01b69f1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/config/urls.php" afterPath="$PROJECT_DIR$/config/urls.php" />
-      <change beforePath="$PROJECT_DIR$/controllers/SearchrestController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/controllers/ResultsapiController.php" afterPath="$PROJECT_DIR$/controllers/ResultsapiController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,27 +29,30 @@
       <file leaf-file-name="ResultsapiController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/ResultsapiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="87" column="40" lean-forward="true" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+            <state relative-caret-position="670">
+              <caret line="111" column="176" lean-forward="false" selection-start-line="111" selection-start-column="176" selection-end-line="111" selection-end-column="176" />
               <folding>
-                <marker date="1516631288044" expanded="true" signature="448:522" ph="SELECT DISTI... v_search" />
-                <marker date="1516631288044" expanded="true" signature="1034:1108" ph="SELECT DISTI... v_search" />
-                <marker date="1516631288044" expanded="true" signature="1218:1308" ph="SELECT DISTI... v_search" />
-                <marker date="1516631288044" expanded="true" signature="1387:1464" ph="SELECT COUNT... v_search" />
-                <marker date="1516631288044" expanded="true" signature="1387:1465" ph="SELECT COUNT... v_search" />
-                <marker date="1516631288044" expanded="true" signature="1557:1658" ph="SELECT DISTI... v_search" />
-                <marker date="1516631288044" expanded="true" signature="1737:1855" ph="SELECT COUNT... v_search" />
-                <marker date="1516631288044" expanded="true" signature="2441:2515" ph="SELECT DISTI... v_search" />
-                <marker date="1516631288044" expanded="true" signature="2585:2686" ph="SELECT DISTI... v_search" />
-                <marker date="1516631288044" expanded="true" signature="2761:2911" ph="SELECT COUNT... v_search" />
-                <marker date="1516631288044" expanded="true" signature="3482:3556" ph="SELECT DISTI... v_search" />
-                <marker date="1516631288044" expanded="true" signature="3626:3727" ph="SELECT DISTI... v_search" />
-                <marker date="1516631288044" expanded="true" signature="3802:4006" ph="SELECT COUNT... v_search" />
-                <marker date="1516631288044" expanded="true" signature="4576:4650" ph="SELECT DISTI... v_search" />
-                <marker date="1516631288044" expanded="true" signature="4720:4821" ph="SELECT DISTI... v_search" />
-                <marker date="1516631288044" expanded="true" signature="5261:5344" ph="SELECT COUNT... v_search" />
-                <marker date="1516631288044" expanded="true" signature="5261:5345" ph="SELECT COUNT... v_search" />
-                <marker date="1516631288044" expanded="true" signature="5261:5456" ph="SELECT COUNT... v_search" />
+                <marker date="1516632996251" expanded="true" signature="448:515" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="448:516" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="448:558" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="448:559" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="1070:1180" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="1290:1414" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="1493:1575" ph="SELECT COUNT... v_search" />
+                <marker date="1516632996251" expanded="true" signature="1493:1606" ph="SELECT COUNT... v_search" />
+                <marker date="1516632996251" expanded="true" signature="1699:1835" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="1914:2067" ph="SELECT COUNT... v_search" />
+                <marker date="1516632996251" expanded="true" signature="2653:2763" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="2833:2969" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="3044:3229" ph="SELECT COUNT... v_search" />
+                <marker date="1516632996251" expanded="true" signature="3800:3910" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="3980:4116" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="4191:4430" ph="SELECT COUNT... v_search" />
+                <marker date="1516632996251" expanded="true" signature="5000:5110" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="5180:5315" ph="SELECT DISTI... v_search" />
+                <marker date="1516632996251" expanded="true" signature="5755:5838" ph="SELECT COUNT... v_search" />
+                <marker date="1516632996251" expanded="true" signature="5755:5874" ph="SELECT COUNT... v_search" />
+                <marker date="1516632996251" expanded="true" signature="5755:5985" ph="SELECT COUNT... v_search" />
               </folding>
             </state>
           </provider>
@@ -315,16 +317,15 @@
       <workItem from="1516099155178" duration="13812000" />
       <workItem from="1516118436561" duration="787000" />
       <workItem from="1516178891694" duration="10065000" />
-      <workItem from="1516610895156" duration="12718000" />
+      <workItem from="1516610895156" duration="13838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41112000" />
+    <option name="totallyTimeSpent" value="42232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="169" y="123" width="1561" height="855" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14951456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -655,27 +656,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/ResultsapiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="87" column="40" lean-forward="true" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+        <state relative-caret-position="670">
+          <caret line="111" column="176" lean-forward="false" selection-start-line="111" selection-start-column="176" selection-end-line="111" selection-end-column="176" />
           <folding>
-            <marker date="1516631288044" expanded="true" signature="448:522" ph="SELECT DISTI... v_search" />
-            <marker date="1516631288044" expanded="true" signature="1034:1108" ph="SELECT DISTI... v_search" />
-            <marker date="1516631288044" expanded="true" signature="1218:1308" ph="SELECT DISTI... v_search" />
-            <marker date="1516631288044" expanded="true" signature="1387:1464" ph="SELECT COUNT... v_search" />
-            <marker date="1516631288044" expanded="true" signature="1387:1465" ph="SELECT COUNT... v_search" />
-            <marker date="1516631288044" expanded="true" signature="1557:1658" ph="SELECT DISTI... v_search" />
-            <marker date="1516631288044" expanded="true" signature="1737:1855" ph="SELECT COUNT... v_search" />
-            <marker date="1516631288044" expanded="true" signature="2441:2515" ph="SELECT DISTI... v_search" />
-            <marker date="1516631288044" expanded="true" signature="2585:2686" ph="SELECT DISTI... v_search" />
-            <marker date="1516631288044" expanded="true" signature="2761:2911" ph="SELECT COUNT... v_search" />
-            <marker date="1516631288044" expanded="true" signature="3482:3556" ph="SELECT DISTI... v_search" />
-            <marker date="1516631288044" expanded="true" signature="3626:3727" ph="SELECT DISTI... v_search" />
-            <marker date="1516631288044" expanded="true" signature="3802:4006" ph="SELECT COUNT... v_search" />
-            <marker date="1516631288044" expanded="true" signature="4576:4650" ph="SELECT DISTI... v_search" />
-            <marker date="1516631288044" expanded="true" signature="4720:4821" ph="SELECT DISTI... v_search" />
-            <marker date="1516631288044" expanded="true" signature="5261:5344" ph="SELECT COUNT... v_search" />
-            <marker date="1516631288044" expanded="true" signature="5261:5345" ph="SELECT COUNT... v_search" />
-            <marker date="1516631288044" expanded="true" signature="5261:5456" ph="SELECT COUNT... v_search" />
+            <marker date="1516632996251" expanded="true" signature="448:515" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="448:516" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="448:558" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="448:559" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="1070:1180" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="1290:1414" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="1493:1575" ph="SELECT COUNT... v_search" />
+            <marker date="1516632996251" expanded="true" signature="1493:1606" ph="SELECT COUNT... v_search" />
+            <marker date="1516632996251" expanded="true" signature="1699:1835" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="1914:2067" ph="SELECT COUNT... v_search" />
+            <marker date="1516632996251" expanded="true" signature="2653:2763" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="2833:2969" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="3044:3229" ph="SELECT COUNT... v_search" />
+            <marker date="1516632996251" expanded="true" signature="3800:3910" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="3980:4116" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="4191:4430" ph="SELECT COUNT... v_search" />
+            <marker date="1516632996251" expanded="true" signature="5000:5110" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="5180:5315" ph="SELECT DISTI... v_search" />
+            <marker date="1516632996251" expanded="true" signature="5755:5838" ph="SELECT COUNT... v_search" />
+            <marker date="1516632996251" expanded="true" signature="5755:5874" ph="SELECT COUNT... v_search" />
+            <marker date="1516632996251" expanded="true" signature="5755:5985" ph="SELECT COUNT... v_search" />
           </folding>
         </state>
       </provider>
