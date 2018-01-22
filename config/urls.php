@@ -7,5 +7,9 @@ return [
     ],
     'car-leasing' => 'site/manulist',
     'about' => 'site/about',
-
+    [
+        'pattern' => 'searchrestapi/<categories:.*>',
+        'route' => 'searchrest/category',
+        'encodeParams' => false,
+    ],
 ];
