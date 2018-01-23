@@ -3,13 +3,7 @@
 /* @var $this yii\web\View */
 
 $this->title = $content["Manufacturer_Name"].' '.$content["Model_Description"] ;
-$session = Yii::$app->session;
-if ($session->isActive){
-    echo "sessionid".Yii::$app->session->getId();
 
-}else{
-$session->open();
-}
 ?>
 <section class="car_postpg">
     <div class="container">
