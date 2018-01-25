@@ -126,7 +126,7 @@ class SiteController extends Controller
     public function actionManulist()
     {
         $page = Yii::$app->db->createCommand('SELECT * FROM tblpages WHERE PageName="manufacturer"')->queryOne();
-        $manulogos = Yii::$app->db->createCommand('SELECT * FROM tlogos WHERE fuktrading=1')->queryAll();
+        $manulogos = Yii::$app->db->createCommand('SELECT * FROM tbllogos WHERE fuktrading=1')->queryAll();
 
 
         return $this->render('manulist',array('page'=>$page,'manulogos'=>$manulogos));

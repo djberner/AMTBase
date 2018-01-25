@@ -12,10 +12,10 @@ $this->title = $content["Manufacturer_Name"].' '.$content["Model_Description"] ;
                 <div class="col-lg-7 col-md-7 col-sm-7 carlft_blocksize">
                     <div class="cpost_title">
                         <div class="row">
-                            <div class="col-lg-2 col-md-2 col-sm-2"><img src="/images/audi_logo.png"></div>
+                            <div class="col-lg-2 col-md-2 col-sm-2"><img src="/images/brands/<?=$content["flogo"] ?>"></div>
                             <div class="col-lg-10 col-md-10 col-sm-10">
-                                <h1><?=$content["Manufacturer_Name"] ?> <?=$content["Range_Name"] ?> <?=$content["Model_Body_Style"] ?></h1>
-                                <h5><?=$content["Model_Description"] ?> <?=$content["Derivative_CAP_ID"] ?></h5>
+                                <h1><?=$content["fmanu"] ?> <?=$content["Range_Name"] ?> <?=$content["Model_Body_Style"] ?></h1>
+                                <h5><?=$content["Model_Description"] ?></h5>
                             </div>
                         </div>
                         <button>Add to my showroom</button>

@@ -141,7 +141,7 @@ $this->title = $page["PageTitle"] ;
                                         </div><!--row-->
                                     </div>
                                     <div class="sm_carrngviewbtn">
-                                        <a href="/car-leasing/<?=$samplevehicle["Manufacturer_Name"][$i] ?>/<?=$samplevehicle["Range_Name"][$i] ?>"> <button type="submit" class="hm_redbtns">View Range <img
+                                        <a href="/car-leasing/<?=strtolower($samplevehicle["Manufacturer_Name"][$i]) ?>/<?=strtolower($samplevehicle["Range_Name"][$i]) ?>"> <button type="submit" class="hm_redbtns">View Range <img
                                                     src="/images/hmright_arrow.png"></button></a>
                                     </div>
 
