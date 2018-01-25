@@ -28,13 +28,16 @@ class ProductController extends Controller
 
         }
         if (sizeof($params)==1){
-            $page = Yii::$app->db->createCommand('SELECT * FROM tblpages WHERE PageName="manufacturer_'.strtolower ($params[0]).'"')->queryOne();
+            $page = Yii::$app->db->createCommand('SELECT * FROM tblpages WHERE PageName="manufacturer_'.strtolower($params[0]).'"')->queryOne();
             $vehiclemodels = Yii::$app->db->createCommand('SELECT DISTINCT Range_Name FROM tblbase WHERE Vehicle_Type ="Car" AND Manufacturer_Name="'.$params[0].'" ORDER BY Range_Name ')->queryAll();
             foreach ($vehiclemodels as $arr_veh_model) {
+                $cheapestvehicleinmodelrange = Yii::$app->db->createCommand('SELECT tblprice.Derivative_CAP_Code FROM tblprice  WHERE tblprice.Derivative_CAP_Code IN (SELECT tblbase.Derivative_CAP_Code FROM tblbase WHERE tblbase.Vehicle_Type ="Car" AND tblbase.Manufacturer_Name = "'.$params[0].'" AND tblbase.Range_Name="'.$arr_veh_model["Range_Name"].'" ) ORDER BY tblprice.Derivative_Monthly_Rental_Price LIMIT 1')->queryOne();
+
                 $samplevehiclemodels = Yii::$app->db->createCommand('SELECT tblbase.*, tblprice.Derivative_Monthly_Rental_Price,tblimage.Image_Set_ID,tblkeyspecs.* FROM tblbase JOIN tblprice
-    ON tblbase.Derivative_CAP_Code = tblprice.Derivative_CAP_Code JOIN tblimage ON tblbase.Derivative_CAP_ID=tblimage.CAP_Id JOIN tblkeyspecs ON tblbase.Derivative_CAP_ID=tblkeyspecs.Derivative_CAP_ID WHERE  tblbase.Vehicle_Type ="Car" AND tblbase.Manufacturer_Name = "'.$params[0].'" AND tblbase.Range_Name="'.$arr_veh_model["Range_Name"].'" ORDER BY tblprice.Derivative_Monthly_Rental_Price LIMIT 1')->queryOne();
-             //   $samplevehiclemodelscount = Yii::$app->db->createCommand('SELECT count(Range_Name) as NumDealsAvailable  FROM tblbase JOIN tblprice
-   // ON tblbase.Derivative_CAP_Code = tblprice.Derivative_CAP_Code WHERE  Vehicle_Type ="Car" AND Manufacturer_Name="'.$params[0].'" AND Range_Name="'.$arr_veh_model["Range_Name"].'"')->queryOne();
+    ON tblbase.Derivative_CAP_Code = tblprice.Derivative_CAP_Code JOIN tblimage ON tblbase.Derivative_CAP_ID=tblimage.CAP_Id JOIN tblkeyspecs ON tblbase.Derivative_CAP_ID=tblkeyspecs.Derivative_CAP_ID WHERE  tblbase.Derivative_CAP_Code = "'.$cheapestvehicleinmodelrange["Derivative_CAP_Code"].'" ORDER BY tblprice.Derivative_Monthly_Rental_Price LIMIT 1')->queryOne();
+                $samplevehiclemodelscount = Yii::$app->db->createCommand('SELECT count(Derivative_CAP_Code) as NumDealsAvailable  
+                            FROM tblprice WHERE tblprice.Derivative_CAP_Code IN (SELECT tblbase.Derivative_CAP_Code FROM tblbase
+                            WHERE  Vehicle_Type ="Car" AND Manufacturer_Name="'.$params[0].'" AND Range_Name="'.$arr_veh_model["Range_Name"].'")')->queryOne();
 
                 /*        echo "<pre>";
                         var_dump($samplevehiclemodelscount);
