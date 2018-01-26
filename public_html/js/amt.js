@@ -83,67 +83,7 @@ $(document).ready(function(){
                 $description = $('#description', $details),
                 lastIndex = -1;
 
-            // Calling new mightySlider class
-            var slider = new mightySlider($frame, {
-                speed: 1000,
-                startAt: 1,
-                autoScale: 1,
-                easing: 'easeOutExpo',
 
-                // Navigation options
-                navigation: {
-                    slideSize: calculator(getViewport().width),
-                    keyboardNavBy: 'slides',
-                    activateOn: clickEvent
-                },
-
-                // Dragging options
-                dragging: {
-                    swingSpeed: 0.12,
-                    onePage: 1
-                },
-
-                // Buttons options
-                buttons: !isTouch ? {
-                    prev: $('a.mSPrev', $frame),
-                    next: $('a.mSNext', $frame)
-                } : {},
-
-                // Cycling options
-                cycling: {
-                    cycleBy: 'slides'
-                }
-            },
-
-            // Register callbacks to the events
-            {
-                // Register mightySlider :active event callback
-                active: function(name, index) {
-                    var slideOptions = this.slides[index].options;
-
-                    if (lastIndex !== index)
-                        $details.stop().animate({ opacity: 0 }, 500, function(){
-                            $title.html(slideOptions.title);
-                            $photographer.html(slideOptions.photographer);
-                            $description.html(slideOptions.description);
-                            $details.animate({ opacity: 1 }, 500);
-                        });
-
-                    lastIndex = index;
-                }
-            }).init();
-
-            // Register window :resize event callback
-            $win.resize(function(){
-                // Update slider options using 'set' method
-                slider.set({
-                    navigation: {
-                        slideSize: calculator(getViewport().width)
-                    }
-                });
-            });
-        })();
-    });
     $(document).ready(function () {
     $('#horizontalTab').easyResponsiveTabs({
     type: 'default', //Types: default, vertical, accordion

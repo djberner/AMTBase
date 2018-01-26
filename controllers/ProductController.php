@@ -66,7 +66,7 @@ class ProductController extends Controller
             $page = Yii::$app->db->createCommand('SELECT * FROM tblpages WHERE PageName="model_'.strtolower ($params[0]).'_'.strtolower ($params[1]).'"')->queryOne();
 
             $vehiclerange = Yii::$app->db->createCommand('SELECT tblbase.*, tblprice.Derivative_Monthly_Rental_Price,tblimage.Image_Set_ID,tblkeyspecs.*,tbllogos.* FROM tblbase JOIN tblprice
-    ON tblbase.Derivative_CAP_Code = tblprice.Derivative_CAP_Code JOIN tblimage ON tblbase.Derivative_CAP_ID=tblimage.CAP_Id JOIN tblkeyspecs ON tblbase.Derivative_CAP_ID=tblkeyspecs.Derivative_CAP_ID JOIN tbllogos ON tblbase.Manufacturer_Name=tbllogos.fManu WHERE  tblbase.Vehicle_Type ="Car" AND tblbase.Manufacturer_Name = "'.$params[0].'" AND tblbase.Range_Name="'.$params[1].'" ORDER BY tblprice.Derivative_Monthly_Rental_Price ')->queryAll();
+    ON tblbase.Derivative_CAP_Code = tblprice.Derivative_CAP_Code JOIN tblimage ON tblbase.Derivative_CAP_ID=tblimage.CAP_Id JOIN tblkeyspecs ON tblbase.Derivative_CAP_ID=tblkeyspecs.Derivative_CAP_ID JOIN tbllogos ON tblbase.Manufacturer_Name=tbllogos.fManu WHERE  tblbase.Vehicle_Type ="Car" AND tblbase.Manufacturer_Name = "'.$params[0].'" AND tblbase.Range_Name="'.$params[1].'" LIMIT 10 ')->queryAll();
 
             return $this->render('model',array('page'=>$page,'vehiclerange'=>$vehiclerange));
 
