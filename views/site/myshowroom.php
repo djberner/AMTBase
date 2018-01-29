@@ -360,65 +360,47 @@ $this->params['breadcrumbs'][] = $this->title;
                                       <!-- THIS IS THE FIRST PRICE OPTION FIELD ITEM -->
                                           <div class="showroom_vehicle">
 
-                                            <div class="panel-group" id="accordion">
-                                              <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                  <h4 class="panel-title showroom_panel_title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#">Driver convenience </a>
-                                                  </h4>
+                                            <div class="panel-group" id="accordion_standard_equipment_1">
+                                                <div class="panel panel-default">
+                                                  <div class="panel-heading">
+                                                    <h4 data-toggle="collapse" data-parent="#accordion_standard_equipment_1" href="#collapse1" class="panel-title expand">
+                                                       <div class="right-arrow pull-right"></div>
+                                                      <a href="#">Collapsible Group 1</a>
+                                                    </h4>
+                                                  </div>
+                                                  <div id="collapse1" class="panel-collapse collapse">
+                                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                  </div>
                                                 </div>
-                                                <div id="collapse1" class="panel-collapse collapse in">
-                                                  <div class="panel-body">
-
-                                                    <table class="table table-striped">
-                                                      <tbody>
-                                                        <tr>
-                                                          <td>Lorem Ipsum dolor sit amet</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Lorem Ipsum dolor sit amet</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Lorem Ipsum dolor sit amet</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Lorem Ipsum dolor sit amet</td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>Lorem Ipsum dolor sit amet</td>
-                                                        </tr>
-                                                      </tbody>
-                                                    </table>
-
-
+                                                <div class="panel panel-default">
+                                                  <div class="panel-heading">
+                                                    <h4 data-toggle="collapse" data-parent="#accordion_standard_equipment_1" href="#collapse2" class="panel-title expand">
+                                                        <div class="right-arrow pull-right"></div>
+                                                      <a href="#">Collapsible Group 2</a>
+                                                    </h4>
+                                                  </div>
+                                                  <div id="collapse2" class="panel-collapse collapse">
+                                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                                  </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                  <div class="panel-heading">
+                                                    <h4 data-toggle="collapse" data-parent="#accordion_standard_equipment_1" href="#collapse3" class="panel-title expand">
+                                                        <div class="right-arrow pull-right"></div>
+                                                      <a href="#">Collapsible Group 3</a>
+                                                    </h4>
+                                                  </div>
+                                                  <div id="collapse3" class="panel-collapse collapse">
+                                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                                                   </div>
                                                 </div>
                                               </div>
-                                              <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                  <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#">Collapsible Group 2</a>
-                                                  </h4>
-                                                </div>
-                                                <div id="collapse2" class="panel-collapse collapse">
-                                                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                                                </div>
-                                              </div>
-                                              <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                  <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#">Collapsible Group 3</a>
-                                                  </h4>
-                                                </div>
-                                                <div id="collapse3" class="panel-collapse collapse">
-                                                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                                                </div>
-                                              </div>
-                                            </div>
 
                                           </div>
                                   </div>

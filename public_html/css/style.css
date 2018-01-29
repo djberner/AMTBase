@@ -7916,3 +7916,6 @@ text-align:center;
 		margin-left:10px;
 		opacity: 0.6;
 	}
+.panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
+	color:#000;
+}
