@@ -2,12 +2,13 @@
 <?php
 
 /* @var $this yii\web\View */
-
 use yii\helpers\Html;
 
 $this->title = 'AMT Vehicle Group | Blog';
 $this->params['breadcrumbs'][] = $this->title;
+
 ?>
+
 <div class="clearfix"></div>
 
 <section id="blog_gray">

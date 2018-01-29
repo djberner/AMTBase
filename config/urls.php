@@ -10,6 +10,10 @@ return [
     'meet-the-team' => 'site/meettheteam',
     'personal-leasing' => 'site/personalleasing',
     'business-leasing' => 'site/businessleasing',
+    'services/gap-insurance' => 'site/gapinsurance',
+    'services/maintenance' => 'site/maintenance',
+    'services/part-exchange' => 'site/partexchange',
+    'services/smartrack' => 'site/smartrack',
     'blog' => 'site/blog',
 
     'terms-and-conditions' => 'site/termsandconditions',
@@ -25,6 +29,7 @@ return [
 
     'contact-us' => 'site/contactus',
     'leasing' => 'site/leasing',
+
     'leasing-guide/what-is-car-leasing' => 'site/whatiscarleasing',
     'leasing-guide/how-it-works' => 'site/howitworks',
     'leasing-guide/finance-options' => 'site/financeoptions',
@@ -35,6 +40,7 @@ return [
     'leasing-guide/bik-tax-calculator' => 'site/biktaxcalculator',
     'leasing-guide/glossary' => 'site/glossary',
     'leasing-guide/end-of-contract' => 'site/endofcontract',
+
     'my-showroom' => 'site/myshowroom',
     [
     'pattern' => 'resultsapis/<categories:.*>',

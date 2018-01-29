@@ -23,11 +23,11 @@
   				<img src="images/services_maintenance.png" class="img-responsive" alt="Get the Maintenance Service package">
   		</div>
 
-  		<div class="col-md-6 col-sm-6 col-xs-12  wow fadeInLeft" data-wow-delay="0.6s">
+  		<div class="col-md-6 col-sm-6 col-xs-12 services_benefits  wow fadeInLeft" data-wow-delay="0.6s">
   				<h2>Maintenance</h2>
   				<p>A comprehensive maintenance package can be added to your leasing contract for an additional fixed monthly cost. This will cover the cost of all servicing, brakes, replacement tyres, even punctures. A maintenance package is a popular choice as it gives you peace of mind that any repairs can be easily arranged and the costs are all covered within your maintenance fee with no unexpected surprises. Read on for more information or ask your account manager for further details.
   				</p>
-          <a href="maintenance.php"> LEARN ABOUT OUR MAINTENANCE PACKAGES <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+          <a href="/services/maintenance"> LEARN ABOUT OUR MAINTENANCE PACKAGES  </a>
   		</div>
 
   	</div>
@@ -42,7 +42,7 @@
   	<div class="col-md-6 col-sm-6 col-xs-12 services_benefits wow fadeInRight">
   		<h2>No credit, no problem</h2>
   		<p>If you are seeking a business agreement and you are a start-up with great potential or a more established business with some credit history challenges, again, credit doesn't have to be a barrier to your new van if you have some capital to commit. We have a range of in-house funding options to get you the new car you want.</p>
-      <a href="part-exchange.php"> FREE CAR VALUATION </a>
+      <a href="/services/part-exchange"> FREE CAR VALUATION </a>
   	</div>
 
 
@@ -59,7 +59,7 @@
     <div class="col-md-6 col-sm-6 col-xs-12 services_benefits wow fadeInLeft">
       <h2>Trafficmaster Trackstar</h2>
       <p>Enjoy peace of mind and enhanced security with the stolen vehicle system Trafficmaster Trackstar. A vehicle tracking system can be one of the best ways to deter car thieves and with 86,000 vehicles stolen in the UK in 2016, deterrents are as necessary as ever. If your vehicle is stolen, the Trafficmaster Trackstar is activated and it's location is pinpointed every 20 seconds using GPS technology, which greatly increases the chances of you being able to recover your vehicle quickly.</p>
-      <a href="smarttrack.php"> VISIT THE WEBSITE </a>
+      <a href="/services/smartrack"> VISIT THE WEBSITE </a>
     </div>
 
 
@@ -77,7 +77,7 @@
 
   <p>Gap insurance will pay the difference between the motor insurer settlement and the outstanding finance on your vehicle.</p>
 
-  <a href="gap-insurance.php"><button type="submit" class="hm_redbtns">LEARN MORE ABOUT GAP INSURANCE <img src="images/hmright_arrow.png"> </button></a>
+  <a href="/services/gap-insurance"><button type="submit" class="hm_redbtns">LEARN MORE ABOUT GAP INSURANCE <img src="images/hmright_arrow.png"> </button></a>
   </div>
 
 

@@ -8,6 +8,7 @@
     </div>
   </div>
 </div>
+
 <div class="container-fluid hidden-sm hidden-sm hidden-md hidden-lg">
   <div class="row">
     <div class="my_showroom">
@@ -51,6 +52,7 @@
     </div>
   </div>
 </div>
+
 <div class="middle-head">
   <div class="container-fluid">
     <div class="col-lg-6 col-md-7">

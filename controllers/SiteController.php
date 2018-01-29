@@ -141,6 +141,22 @@ class SiteController extends Controller
     {
         return $this->render('blog');
     }
+    public function actionMaintenance()
+    {
+        return $this->render('maintenance');
+    }
+    public function actionPartexchange()
+    {
+        return $this->render('partexchange');
+    }
+    public function actionSmartrack()
+    {
+        return $this->render('smartrack');
+    }
+    public function actionGapinsurance()
+    {
+        return $this->render('gapinsurance');
+    }
     public function actionVanleasing()
     {
         return $this->render('vanleasing');

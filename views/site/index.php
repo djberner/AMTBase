@@ -496,7 +496,7 @@ Reset Form</a>
             <h4 class="wow fadeInUp" data-wow-delay="0.2s">We’ve been established for over 20 years so we know the car leasing and van leasing market.</h4>
             <p  class="wow fadeInUp" data-wow-delay="0.4s">We partner with a range of different funders so we can remain impartial and work with you to get the best lease deal possible. Accredited by the BVRLA – the UK’s independent vehicle rental and leasing body – you can be rest assured you’re dealing with reputable and knowledgeable car leasing experts. Need a car or van lease at short notice? We have a range of cars and vans in stock which can be available to you in as little as two weeks.
             </p>
-          <a href="/about-us">  <button type="submit" class="hm_redbtns wow shake" data-wow-delay="1s">Find out more about AMT <img src="images/hmright_arrow.png"> </button> </a>
+          <a href="/about-us">  <button type="submit" class="hm_redbtns wow fadeInUp" data-wow-delay="1s">Find out more about AMT <img src="images/hmright_arrow.png"> </button> </a>
         </div>
     </div>
     <!--container-->
