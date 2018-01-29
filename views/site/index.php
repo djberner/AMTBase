@@ -471,7 +471,7 @@ Reset Form</a>
                 <div class="hm_supotinfo">
                     <figure><img src="images/icons/part-exchange.svg"></figure>
                     <h4><strong>Part exchange</strong></h4>
-                    <p>Save yourself time - if you’ve got a vehicle to sell, we can part exchange it for you</p>
+                    <p>Save yourself time - if you’ve got a vehicle to sell, we can part exchange it for you.</p>
                 </div>
             </div>
             <!--col-lg-3-->

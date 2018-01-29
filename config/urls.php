@@ -7,7 +7,7 @@ return [
     ],
     'car-leasing' => 'site/manulist',
     'about-us' => 'site/aboutus',
-    'meet-the-team' => 'site/meettheteam',
+    'about-us/meet-the-team' => 'site/meettheteam',
     'personal-leasing' => 'site/personalleasing',
     'business-leasing' => 'site/businessleasing',
     'services/gap-insurance' => 'site/gapinsurance',

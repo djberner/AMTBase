@@ -27,8 +27,8 @@ $this->params['breadcrumbs'][] = $this->title;
             <header>
               <h1 class="wow fadeInUp" data-wow-delay="0.5s">A potted history of AMT Leasing</h1>
               <h2 class="wow fadeInUp" data-wow-delay="0.8s">AMT Leasing was formed back in 1995 by Neil Mcgawley. He saw an opportunity in the leasing market and so struck out on his own to become a one-man leasing and finance broker. </h2>
-              <p class="wow fadeInUp" data-wow-delay="1s">Fast forward 22 years and Neil still heads up the AMT group of companies which today are worth £20m and employ over 150 staff across the country. </p>
-              <p class="wow fadeInUp" data-wow-delay="1.2s"> Over this time, the business has grown and diversified adding premium and prestige car sales in 2004 through AMT Specialist Cars and a premium and specialist vehicle rental business  AMT Rental - established in 2008. AMT Vehicle Rental has 7 regional branches and a 2000-strong car fleet. What’s next? Well, we’re not content with just ‘ticking over’ we want to continue to grow and diversify the AMT group of companies, exceeding customers’ expectations as we go. </p>
+              <p class="wow fadeInUp" data-wow-delay="1s">Fast forward 22 years and Neil still heads up the AMT group of companies which today turnover £20m and employ over 150 staff across the country. </p>
+              <p class="wow fadeInUp" data-wow-delay="1.2s"> Over this time, the business has grown and diversified adding premium and prestige car sales in 2004 through AMT Specialist Cars and a premium and specialist vehicle rental business  AMT Vehicle Rental - established in 2008. AMT Vehicle Rental has 7 regional branches and a 2000-strong car fleet. What’s next? Well, we’re not content with just ‘ticking over’ we want to continue to grow and diversify the AMT group of companies, exceeding customers’ expectations as we go. </p>
             </header>
           </article>
         </div>
@@ -131,7 +131,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <article>
               <h2>And we can offer you complete
                 vehicle solutions</h2>
-              <p>AMT Leasing is only one of the businesses of the AMT Group. Our other businesses include AMT Vehicle Rental and AMT Specialist Cars. So, if you were considering leasing but a short term rental or lease (less than 12 months) would suit you better, or you want to purchase a premium or prestige second hand vehicle – then we can help there too. </p>
+              <p>AMT Leasing is only one of the businesses of the AMT Group. Our other businesses include AMT Vehicle Rental and AMT Specialist Cars. So, if you were considering leasing but a short term rental or lease (less than 12 months) would suit you better, or you want to purchase a premium or prestige vehicles – then we can help there too. </p>
               <p> <a href="#">visit amt group website <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> </p>
             </article>
 
@@ -204,7 +204,7 @@ $this->params['breadcrumbs'][] = $this->title;
           <article>
             <figure><img class="img-responsive" alt="AMT Vehicle Group" src="images/icons/dedicated-support.svg" width="60" height="60"> </figure>
             <h2>Dedicated support </h2>
-            <p>You’ll get a dedicated and experienced account manager to support you throughout the process and beyond.</p>
+            <p>You’ll get a dedicated, experienced Account Manager who will be your point of contact throughout the leasing process and beyond.</p>
           </article>
         </div>
       </div>
@@ -212,8 +212,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="four_service">
           <article>
             <figure><img class="img-responsive" alt="AMT Vehicle Group" src="images/icons/flexible-term.svg" width="60" height="60"> </figure>
-            <h2>Dedicated support </h2>
-            <p>You’ll get a dedicated and experienced account manager to support you throughout the process and beyond.</p>
+            <h2>Flexible terms</h2>
+            <p>The contract length, business or personal terms, the initial payment, mileage, monthly costs and the type of finance arrangement are all tailored to your needs.</p>
           </article>
         </div>
       </div>
@@ -221,8 +221,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="four_service">
           <article>
             <figure><img class="img-responsive" alt="AMT Vehicle Group" src="images/icons/part-exchange.svg" width="60" height="60"> </figure>
-            <h2>Dedicated support </h2>
-            <p>You’ll get a dedicated and experienced account manager to support you throughout the process and beyond.</p>
+            <h2>Part exchange</h2>
+            <p>Save yourself time - if you’ve got a vehicle to sell, we can part exchange it for you.</p>
           </article>
         </div>
       </div>
@@ -230,8 +230,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="four_service">
           <article>
             <figure><img class="img-responsive" alt="AMT Vehicle Group" src="images/icons/great-value.svg" width="60" height="60"> </figure>
-            <h2>Dedicated support </h2>
-            <p>You’ll get a dedicated and experienced account manager to support you throughout the process and beyond.</p>
+            <h2>Great value</h2>
+            <p>We will search the market to get you the best deal possible. If you need something quickly, we also have some great vehicles in stock, all at great prices.</p>
           </article>
         </div>
       </div>
@@ -276,7 +276,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <article>
               <figure><img src="images/BVRLA-large.png" alt="" class="img-responsive"></figure>
               <h2>bvrla</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra lacinia quam, et posuere sem sagittis vel. Pellentesque et risus et dolor rhoncus mollis ac a elit. Praesent posuere elit urna. </p>
+              <p>AMT Leasing is regulated by the Financial Conduct Authority (FCA). The FCA regulates financial firms providing services to consumers and maintains the integrity of the UK’s financial markets.</p>
             </article>
           </div>
         </div>

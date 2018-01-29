@@ -96,7 +96,7 @@
             <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="/about-us">About AMT</a></li>
-                <li><a href="/meet-the-team">Meet the Team</a></li>
+                <li><a href="/about-us/meet-the-team">Meet the Team</a></li>
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/contact-us">Contact Us</a></li>
               </ul>
@@ -154,7 +154,7 @@
                 </li>
               </ul>
             </div>
-            <div class="list-bottom-button"> <a href="#" class="btn btn-red"><i><img src="/images/search.png"></i>go to my showroom</a> <a href="#" class="clear-btn">Clear list</a> </div>
+            <div class="list-bottom-button"> <a href="/my-showroom" class="btn btn-red"><i><img src="/images/search.png"></i>go to my showroom</a> <a href="#" class="clear-btn">Clear list</a> </div>
           </ul>
         </div>
       </div>
@@ -170,7 +170,7 @@
         <div class="feefologo"> <img src="/images/feefo-logo.png"> </div>
       </div>
       <div class="top_phone">
-        <p>Mon-Fri 9am - 5.30pm</p>
+        <p>Mon-Fri <strong> 9am - 5.30pm </strong> </p>
          <h4><img src="/images/icons/phone.svg">0113 3502784</h4>
       </div>
     </div>
