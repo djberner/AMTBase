@@ -28,7 +28,7 @@ $standardvalues = array_column($standard, 'Derivative_Standard_Equipment_Descrip
                  ?>
                 <div class="panel">
                     <h4 class="acdn-title">
-                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse4" class="collapsed"><?= $standard[0]["Derivative_Standard_Equipment_Category_Description"] ?></a>
+                        <a data-toggle="collapse" data-parent="#accordion1" data-target="#collapse4" class="collapsed"><?= $standard[0]["Derivative_Standard_Equipment_Category_Description"] ?></a>
                     </h4>
                     <div id="collapse4" class="panel-collapse collapse in">
                         <div class="acdn-body">
@@ -45,7 +45,7 @@ $standardvalues = array_column($standard, 'Derivative_Standard_Equipment_Descrip
                                        </div>
                                        <div class="panel">
                                            <h4 class="acdn-title">
-                                               <a data-toggle="collapse" data-parent="#accordion1" href="#collapse<?=$i+4 ?>"><?=$standard[$i+1]["Derivative_Standard_Equipment_Category_Description"]?></a>
+                                               <a data-toggle="collapse" data-parent="#accordion1" data-target="#collapse<?=$i+4 ?>"><?=$standard[$i+1]["Derivative_Standard_Equipment_Category_Description"]?></a>
                                            </h4>
                                            <div id="collapse<?=$i+4 ?>" class="panel-collapse collapse">
                                                <div class="acdn-body">
@@ -75,7 +75,7 @@ $standardvalues = array_column($standard, 'Derivative_Standard_Equipment_Descrip
                     ?>
                     <div class="panel">
                     <h4 class="acdn-title">
-                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapse24" class="collapsed"><?= $specs[0]["Technical_Category_Description"] ?></a>
+                        <a data-toggle="collapse" data-parent="#accordion2" data-target="#collapse24" class="collapsed"><?= $specs[0]["Technical_Category_Description"] ?></a>
                     </h4>
                     <div id="collapse24" class="panel-collapse collapse in">
                     <div class="acdn-body">
@@ -92,7 +92,7 @@ $standardvalues = array_column($standard, 'Derivative_Standard_Equipment_Descrip
                                 </div>
                                 <div class="panel">
                                 <h4 class="acdn-title">
-                                    <a data-toggle="collapse" data-parent="#accordion1" href="#collapse2<?=$i+4 ?>"><?=$specs[$i+1]["Technical_Category_Description"]?></a>
+                                    <a data-toggle="collapse" data-parent="#accordion1" data-target="#collapse2<?=$i+4 ?>"><?=$specs[$i+1]["Technical_Category_Description"]?></a>
                                 </h4>
                                 <div id="collapse2<?=$i+4 ?>" class="panel-collapse collapse">
                                 <div class="acdn-body">
@@ -120,7 +120,7 @@ $standardvalues = array_column($standard, 'Derivative_Standard_Equipment_Descrip
                     ?>
                     <div class="panel">
                     <h4 class="acdn-title">
-                        <a data-toggle="collapse" data-parent="#accordion3" href="#collapse34" class="collapsed"><?= $options[0]["Derivative_Option_Category_Description"] ?></a>
+                        <a data-toggle="collapse" data-parent="#accordion3" data-target="#collapse34" class="collapsed"><?= $options[0]["Derivative_Option_Category_Description"] ?></a>
                     </h4>
                     <div id="collapse34" class="panel-collapse collapse in">
                     <div class="acdn-body">
@@ -137,7 +137,7 @@ $standardvalues = array_column($standard, 'Derivative_Standard_Equipment_Descrip
                                 </div>
                                 <div class="panel">
                                 <h4 class="acdn-title">
-                                    <a data-toggle="collapse" data-parent="#accordion1" href="#collapse3<?=$i+4 ?>"><?=$options[$i+1]["Derivative_Option_Category_Description"]?></a>
+                                    <a data-toggle="collapse" data-parent="#accordion1" data-target="#collapse3<?=$i+4 ?>"><?=$options[$i+1]["Derivative_Option_Category_Description"]?></a>
                                 </h4>
                                 <div id="collapse3<?=$i+4 ?>" class="panel-collapse collapse">
                                 <div class="acdn-body">

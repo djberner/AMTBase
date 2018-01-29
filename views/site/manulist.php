@@ -117,7 +117,7 @@ $this->title = $page["PageTitle"] ;
                         ?>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 hm_brandresize">
                             <div class="hm_branddtl">
-                                <a href="/car-leasing/<?=strtolower($value["fmanu"]) ?>"><div class="hm_brandimg"><img src="images/brands/<?=$value["flogo"] ?>"  height="90" width="90"></div>
+                                <a href="/car-leasing/<?=$value["fmanu"] ?>"><div class="hm_brandimg"><img src="images/brands/<?=$value["flogo"] ?>"  height="90" width="90"></div>
                                     <div class="hm_brandnam"><?=$value["fmanu"] ?> <img src="images/hmbrand_arrow.png"></div></a>
                             </div>
                         </div><!--col-lg-2-->

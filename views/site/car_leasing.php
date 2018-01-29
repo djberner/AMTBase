@@ -373,13 +373,9 @@ $this->title = $page["PageTitle"] ;
     </div>
 </section>
 <section class="vr_slider">
-    <?php include(CONST_ROOTDIR.'/views/site/includes/recently_viewed_vehicles.php'); ?>
+    <?php /* include(CONST_ROOTDIR.'/views/site/includes/recently_viewed_vehicles.php'); */ ?>
 </section>
 
 <section class="keep_mail">
-    <?php include(CONST_ROOTDIR.'/views/site/includes/email_newsletter.php'); ?>
+    <?php /* include(CONST_ROOTDIR.'/views/site/includes/email_newsletter.php'); */ ?>
 </section>
-
-
-
-

@@ -4,7 +4,7 @@
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
 defined('CONST_VAT') or define('CONST_VAT', 1.2);
-defined('CONST_ROOTDIR') or define('CONST_ROOTDIR', 'C:\xampp\htdocs');
+defined('CONST_ROOTDIR') or define('CONST_ROOTDIR', 'c:\xampp\htdocs\AMTBase');
 
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../vendor/yiisoft/yii2/Yii.php';

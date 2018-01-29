@@ -11,7 +11,7 @@
                 <div class="sm_carperrgt">
                     <h3><?php if (count($pricing) !== count($pricing, COUNT_RECURSIVE))
                             Yii::$app->language='en-GB';
-                        { echo Yii::$app->formatter->asCurrency(($pricing[0]["Derivative_Monthly_Rental_Price"])*CONST_VAT);}?></h3>
+{ echo Yii::$app->formatter->asCurrency(($pricing[0]["Derivative_Monthly_Rental_Price"])*CONST_VAT);}?></h3>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -22,9 +22,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="sm_carperrgt">
-                    <h3><?php if (count($pricing) !== count($pricing, COUNT_RECURSIVE))
-                            Yii::$app->language='en-GB';
-                        { echo Yii::$app->formatter->asCurrency(($pricing[0]["Derivative_Monthly_Rental_Price"]));}?></h3>
+                    <h3>£XXX.XX</h3>
                 </div>
             </div>
         </div><!--row-->
@@ -33,6 +31,7 @@
 
     <div class="carp_customizform">
         <h4>Customise your deal:</h4>
+
         <div class="advpg_sortby">
             <form>
                 <div class="form-group">
@@ -104,6 +103,3 @@
 
     </div><!--carp_customizform-->
 </div><!--carp_customizdeals-->
-
-
-

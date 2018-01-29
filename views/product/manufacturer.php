@@ -26,7 +26,7 @@ $this->title = $page["PageTitle"] ;
             <div class="choose_model">
                 <form>
                     <div class="form-group">
-                        <label for="">I know what <?= $samplevehicle["Manufacturer_Name"][0]; ?> model I’m looking for</label>
+                        <label for="">I know what Audi model I’m looking for</label>
                         <select class="form-control"  onChange="window.location.href=this.value">
                             <option>Choose your desired model</option>
                             <?php
@@ -110,8 +110,8 @@ $this->title = $page["PageTitle"] ;
                                     </div>
                                     <div class="sm_carfeatur">
                                         <ul>
-                                            <li>MPG<span> From <?=$samplevehicle["urbanmpg"][$i] ?>mpg to <?=$samplevehicle["extraurbanmpg"][$i] ?>mpg </span></li>
-                                            <li>Co2<span> <?=$samplevehicle["co2"][$i] ?>g/km</span></li>
+                                            <li>MPG<span> From <?=$samplevehicle["UrbanMPG"][$i] ?>mpg to <?=$samplevehicle["ExtraUrbanMPG"][$i] ?>mpg </span></li>
+                                            <li>Co2<span> From XX g/km to 130g/km</span></li>
                                         </ul>
                                     </div>
                                     <div class="sm_carpersbus">
@@ -141,7 +141,7 @@ $this->title = $page["PageTitle"] ;
                                         </div><!--row-->
                                     </div>
                                     <div class="sm_carrngviewbtn">
-                                        <a href="/car-leasing/<?=strtolower($samplevehicle["Manufacturer_Name"][$i]) ?>/<?=strtolower($samplevehicle["Range_Name"][$i]) ?>"> <button type="submit" class="hm_redbtns">View Range <img
+                                        <a href="/car-leasing/<?=$samplevehicle["Manufacturer_Name"][$i] ?>/<?=$samplevehicle["Range_Name"][$i] ?>"> <button type="submit" class="hm_redbtns">View Range <img
                                                     src="/images/hmright_arrow.png"></button></a>
                                     </div>
 

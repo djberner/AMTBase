@@ -194,6 +194,7 @@ header {
 	width: 100%;
 	float: left;
 }
+
 .sitebread-inner ul {
 	list-style-type: none;
 	margin: 0px;
@@ -217,12 +218,32 @@ header {
 	top: 1px;
 	position: relative;
 }
+
+
 .sitebread-inner ul li {
 	color: #fff;
 	font-size: 12px;
 	font-family: 'Aller-Bold';
 	text-transform: uppercase;
 }
+.breadcrum-child {
+	 border: 1px solid #A7A9AC;
+		color: #A7A9AC !important;
+		border-color: #A7A9AC;
+		background-color: #fff;
+		padding: 4px 10px;
+		font-family: 'Aller-Bold';
+		font-size: 12px;
+		border-radius: 4px;
+		margin-right: 7px;
+		top: 1px;
+		position: relative;
+}
+.breadcrum-child a {
+	color:#A7A9AC !important;
+	border-color: #A7A9AC;
+}
+
 .page-title {
 	width: 100%;
 	float: left;
@@ -7237,11 +7258,14 @@ background-size: cover;
 .glossary_nav h4 {
 	font-size:16pt;
 }
+.glossary_nav li, .glossary_nav ul{
+	list-style-type: none;
+}
 .glossary_nav a {
-	font-family:'TrebuchetMS-Bold';
+	font-family:'Aller';
 	text-decoration: underline;
 	color:#000;
-	font-size:12pt
+	font-size:13pt
 }
 .glossary_terms {
 	padding-top:20px 0 20px 0;
@@ -7742,6 +7766,130 @@ a:focus{
 	-o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
 	transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
 }
+
+.amt-table{
+	color:#fff;
+	border-radius:4px;
+}
+.amt-table > thead > tr > th{
+text-align:center;
+}
+.amt-table > tbody > tr > td, .amt-table > thead {
+		border: 1px solid #33414e;
+}
+.amt-table > tbody > tr:nth-child(odd) > td, .amt-table > tbody > tr:nth-child(odd) > th {
+   background-color: #485460;
+}
+.amt-table > tbody > tr:nth-child(even) > td, .amt-table > tbody > tr:nth-child(even) > th {
+   background-color: #33414E;
+}
+.amt-table > tbody > tr > td {
+	font-family:'Aller';
+	font-size:14px;
+	padding:20px;
+}
+
+
+.services_benefots a {
+	transition: all 0.4s ease;
+}
+.services_benefits a:hover i {
+		margin-left:10px;
+		opacity: 0.6;
+	}
+.panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
+	color:#000;
+}
+
+.legal_pills{
+	padding:20px;
+	box-shadow: 1px 2px 17px rgba(0,0,0,0.3);
+
+}
+.legal_pills li {
+	list-style-type: none;
+	font-size:10pt;
+	padding-left:10px;
+	padding-top:15px;
+	padding-bottom:10px;
+}
+
+.legal_pills li a {
+	color:#000;
+	font-family:'Aller-Bold';
+	text-transform: uppercase;
+}
+.legal_pills .active{
+	border-left: solid 5px #D3BC8D;
+	transition: all 0.4s ease;
+}
+
+
+.legal_pills .legal_active a{
+	color:#D3BC8D;
+	border-left: solid 5px #D3BC8D;
+	border-radius:0px;
+	padding-left:10px;
+}
+
+.w-1100{width:1100px}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+ max-width:inherit; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events:all;
+}
+.quote_box{height:685px;background-image: url('/images/quote_bg_top.png');background-size:cover;}
+.request_quote h2{
+	color:#fff;margin:45px 30px 25px 5px;font-size:36pt;font-family:'Aller-Bold';
+}
+.request_quote h3{
+	color:#000;font-size:24pt;font-family:'Aller-Bold';margin-bottom:20px;
+}
+.quote_information{padding-left:30px}
+.quote_information p{margin-bottom:15px}
+.quote_information img {padding-right:10px}
+.btn-qt {
+    background-color: #BA0C2F;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    width: 48%;
+    padding: 20px 40px 20px 40px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.btn-qt-sm {
+			background-color: #BA0C2F;
+	    border-radius: 3px;
+	    color: #fff;
+	    font-weight: bold;
+	    width: 80%;
+	    padding: 15px 20px 15px 20px;
+	    margin-top: 0px;
+	    margin-bottom: 20px;
+}
+.btn-qt-sm:hover, .btn-qt:hover{
+	background-color: #8f0823;
+	color: #fff;
+}
+
 @media screen and (max-width: 992px) {
 
 		.faq_block {
@@ -7821,7 +7969,14 @@ a:focus{
 		padding:20px;
 	}
 
+	.request_quote h2 {
+		margin:15px 30px 45px 5px
+	}
+
+	.w-1100{width:98%}
+
 }
+
 @media(min-width: 992px) and (max-width: 1240px) {
 
 	.faq_block {
@@ -7860,26 +8015,7 @@ a:focus{
     text-align: center;
 }
 
+	.w-1100{width:98%}
 
-}
-.amt-table{
-	color:#fff;
-	border-radius:4px;
-}
-.amt-table > thead > tr > th{
-text-align:center;
-}
-.amt-table > tbody > tr > td, .amt-table > thead {
-		border: 1px solid #33414e;
-}
-.amt-table > tbody > tr:nth-child(odd) > td, .amt-table > tbody > tr:nth-child(odd) > th {
-   background-color: #485460;
-}
-.amt-table > tbody > tr:nth-child(even) > td, .amt-table > tbody > tr:nth-child(even) > th {
-   background-color: #33414E;
-}
-.amt-table > tbody > tr > td {
-	font-family:'Aller';
-	font-size:14px;
-	padding:20px;
+
 }
