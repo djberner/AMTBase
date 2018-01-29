@@ -184,6 +184,25 @@
 
 
      });
+
+     // Car Carousel
+
+     $('.slick-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slick-nav'
+    });
+    $('.slick-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slick-for',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true
+    });
+
      // Company Stats Slider
      $('.slick-slider-company-stats').slick({
           draggable:true,
