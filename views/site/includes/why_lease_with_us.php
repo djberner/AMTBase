@@ -35,4 +35,4 @@
     </div><!--row-->
 
     <div class="cpost-leaslink"><a href="#">Learn more about AMT</a> or <a href="#">learn how leasing works</a></div>
-</div><!--container-->
+</div>
