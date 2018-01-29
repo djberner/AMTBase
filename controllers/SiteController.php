@@ -177,6 +177,22 @@ class SiteController extends Controller
     {
       return $this->render('termsandconditions');
     }
+    public function actionComplaintsprocedure()
+    {
+      return $this->render('complaintsprocedure');
+    }
+    public function actionTreatingcustomersfairly()
+    {
+      return $this->render('treatingcustomersfairly');
+    }
+    public function actionInitialdisclosure()
+    {
+      return $this->render('initialdisclosure');
+    }
+    public function actionPrivacypolicy()
+    {
+      return $this->render('privacypolicy');
+    }
     public function actionWhatiscarleasing()
     {
         return $this->render('whatiscarleasing');

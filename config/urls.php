@@ -11,7 +11,13 @@ return [
     'personal-leasing' => 'site/personalleasing',
     'business-leasing' => 'site/businessleasing',
     'blog' => 'site/blog',
+
     'terms-and-conditions' => 'site/termsandconditions',
+    'complaints-procedure' => 'site/complaintsprocedure',
+    'treating-customers-fairly' => 'site/treatingcustomersfairly',
+    'initial-disclosure' => 'site/initialdisclosure',
+    'privacy-policy' => 'site/privacypolicy',
+
     'van-leasing' => 'site/vanleasing',
     'services' => 'site/services',
     'advanced-search' => 'site/advancedsearch',
@@ -28,7 +34,7 @@ return [
     'leasing-guide/fuel-cost-calculator' => 'site/fuelcostcalculator',
     'leasing-guide/bik-tax-calculator' => 'site/biktaxcalculator',
     'leasing-guide/glossary' => 'site/glossary',
-    'leasing-guide/end-of-contract' => 'site/endofcontract',    
+    'leasing-guide/end-of-contract' => 'site/endofcontract',
     'my-showroom' => 'site/myshowroom',
     [
     'pattern' => 'resultsapis/<categories:.*>',

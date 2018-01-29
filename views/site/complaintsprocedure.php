@@ -4,7 +4,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'AMT Vehicle Group | Terms and Conditions';
+$this->title = 'AMT Vehicle Group | Complaints Procedure';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="container">
@@ -27,8 +27,8 @@ $this->params['breadcrumbs'][] = $this->title;
   <div class="row">
     <nav class="col-sm-3">
       <ul class="nav-pills nav-stacked legal_pills affix-top" data-spy="affix" data-offset-top="980">
-        <li class="legal_pill legal_active"><a href="/terms-and-conditions">Terms and Conditions</a></li>
-        <li class="legal_pill"><a href="/complaints-procedure">Complaints Procedure</a> </li>
+        <li class="legal_pill "><a href="/terms-and-conditions">Terms and Conditions</a></li>
+        <li class="legal_pill legal_active"><a href="/complaints-procedure">Complaints Procedure</a> </li>
         <li class="legal_pill"><a href="/treating-customers-fairly">Treating Customers Fairly</a></li>
         <li class="legal_pill"><a href="/initial-disclosure">Initial Disclosure</a></li>
         <li class="legal_pill"><a href="/privacy-policy">Privacy Policy</a></li>
@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="col-sm-9">
 
       <div id="terms-and-conditions" class="terms_and_conditions_item">
-      <h2> Terms and Conditions </h2>
+      <h2> Complaints Procedure   </h2>
 
 
 
