@@ -22,6 +22,11 @@ $this->params['breadcrumbs'][] = $this->title;
     position:relative;
 }
 </style>
+
+<?php include(CONST_ROOTDIR.'/views/site/includes/modal.php'); ?>
+
+
+
 <section class="faq_answers">
   <div class="container">
   <div class="row">

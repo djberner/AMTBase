@@ -74,7 +74,8 @@
        dots: false,
          infinite: true,
          speed: 300,
-         slidesToShow: 4,
+         centerMode:true,
+         slidesToShow: 6,
          slidesToScroll: 3,
          responsive: [
            {
