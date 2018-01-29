@@ -12,4 +12,10 @@ return [
         'route' => 'resultsapi/category',
         'encodeParams' => false,
     ],
+    [
+        'pattern' => 'showroom/<categories:.*>',
+        'route' => 'site/showroom',
+        'encodeParams' => false,
+    ],
+
 ];

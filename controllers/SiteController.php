@@ -131,4 +131,42 @@ class SiteController extends Controller
 
         return $this->render('manulist',array('page'=>$page,'manulogos'=>$manulogos));
     }
+    public function actionShowroom($categories)
+    {
+        $params = explode('/', $categories);
+        $page = Yii::$app->db->createCommand('SELECT * FROM tblpages WHERE PageName="manufacturer"')->queryOne();
+
+        $product = Yii::$app->db->createCommand('SELECT tblbase.Derivative_CAP_ID FROM tblbase WHERE tblbase.Derivative_CAP_ID IN ("'.$params[0].'","'.$params[1].'","'.$params[2].'") ')->queryAll();
+        $vehicles = array();
+        for ($i = 0; $i <sizeof($product); $i++){
+
+
+            /*
+                   echo "<pre>";
+                    var_dump($samplevehiclemodelscount);
+                    echo "</pre>";*/
+            $vehicle = Yii::$app->db->createCommand('SELECT tblbase.*, tbllogos.*, tblkeyspecs.* FROM tblbase  LEFT JOIN tbllogos ON tblbase.Manufacturer_Name=tbllogos.fManu LEFT JOIN tblkeyspecs ON tblbase.Derivative_CAP_ID=tblkeyspecs.Derivative_CAP_ID WHERE tblbase.Derivative_CAP_ID ="'.$product[$i]["Derivative_CAP_ID"].'"')->queryAll();
+            $specs = Yii::$app->db->createCommand('SELECT Technical_Category_Description,Technical_Long_Description,Technical_Value FROM tblspec WHERE  Derivative_CAP_ID ="'.$product[$i]["Derivative_CAP_ID"].'"  ORDER BY Technical_Category_Description ')->queryAll();
+            $standard = Yii::$app->db->createCommand('select tblstandard.Derivative_Standard_Equipment_Category_Description, Derivative_Standard_Equipment_Description FROM tblstandard where  Derivative_CAP_ID ="'.$product[$i]["Derivative_CAP_ID"].'" ORDER BY tblstandard.Derivative_Standard_Equipment_Category_Description ')->queryAll();
+            $options = Yii::$app->db->createCommand('select Derivative_Option_Category_Description, Derivative_Option_Description, Derivative_Option_Basic_Price FROM tbloption where  Derivative_CAP_ID ="'.$product[$i]["Derivative_CAP_ID"].'" ORDER BY Derivative_Option_Category_Description ')->queryAll();
+            $pricing = Yii::$app->db->createCommand('select Derivative_Rental_Term_Months, Derivative_Rental_Annual_Mileage, Derivative_Monthly_Rental_Price, Derivative_Monthly_Maintenance_Price FROM tblprice  JOIN tblbase ON tblbase.Derivative_CAP_Code=tblprice.Derivative_CAP_Code where  tblbase.Derivative_CAP_ID ="'.$product[$i]["Derivative_CAP_ID"].'" ')->queryAll();
+            $image = Yii::$app->db->createCommand('SELECT Image_Set_ID FROM tblimage WHERE CAP_Id ="'.$product[$i]["Derivative_CAP_ID"].'" ')->queryAll();
+            //Derivative_CAP_ID
+            //$product["Derivative_CAP_ID"]["vehicle"]=$vehicle;
+            $vehicles[$i]["vehicle"]=$vehicle;
+            $vehicles[$i]["specs"]=$specs;
+            $vehicles[$i]["standard"]=$standard;
+            $vehicles[$i]["options"]=$options;
+            $vehicles[$i]["pricing"]=$pricing;
+            $vehicles[$i]["image"]=$image;
+
+
+        }
+
+
+
+       // $id = Yii::app()->request->getQuery('id');
+
+        return $this->render('showroom',array('page'=>$page,'product'=>$vehicles));
+    }
 }

@@ -49,7 +49,7 @@ $standardvalues = array_column($standard, 'Derivative_Standard_Equipment_Descrip
                                            </h4>
                                            <div id="collapse<?=$i+4 ?>" class="panel-collapse collapse">
                                                <div class="acdn-body">
-
+                                       <ul>
                                        <?php
                                    }
                             }else{
