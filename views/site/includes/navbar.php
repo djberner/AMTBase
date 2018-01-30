@@ -81,6 +81,7 @@
             <li><a href="/services">Services</a></li>
             <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leasing Guide<span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu">
+                <li><a href="/leasing-guide"> The Guide </a></li>
                 <li><a href="/leasing-guide/what-is-car-leasing"> what is car leasing? </a> </li>
                 <li><a href="/leasing-guide/how-it-works"> how it works </a></li>
                 <li><a href="/leasing-guide/finance-options"> finance options </a></li>

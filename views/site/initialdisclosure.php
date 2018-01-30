@@ -37,17 +37,69 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="col-sm-9">
 
       <div id="terms-and-conditions" class="terms_and_conditions_item">
-      <h2> Terms and Conditions </h2>
+
+        <p> AMT Contract Hire & Leasing Ltd are authorised and regulated by the Financial Conduct Authority. </p>
+
+        <p> AMT Contract Hire & Leasing Ltd is a credit broker and not a lender. </p>
 
 
-
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio quam, scelerisque non lectus eget, pretium accumsan diam. Mauris congue leo magna, ut porttitor elit maximus quis. Nulla sollicitudin nulla in arcu consequat, eget auctor odio aliquam. Vivamus sodales vestibulum turpis et accumsan. Mauris scelerisque neque ac odio tempor dapibus. Maecenas sit amet mauris magna. Donec scelerisque urna eu massa commodo euismod. Nulla tincidunt lectus at tellus hendrerit, non pulvinar urna commodo. </p>
-
-
-        <p> Aliquam consequat est nulla, ut interdum ligula interdum eu. Maecenas tincidunt sem ac luctus porta. Etiam molestie pellentesque diam, quis maximus nisl pulvinar ac. Vestibulum varius venenatis faucibus. Nulla ut mollis tellus. Nullam sed dictum nisi. Cras convallis consequat egestas. Nullam id ornare arcu. Ut malesuada dolor ut est sollicitudin imperdiet. Aenean at ex facilisis, convallis elit vitae, blandit velit. Nulla non viverra lorem. Sed ac justo et lectus pellentesque dapibus. </p>
+        <p> You can verify this by checking the FCA Register on the website: <a href="http://www.fca.ordg.uk/register/"> http://www.fca.ordg.uk/register/ </a> or contacting them on: 0300 500 8082. </p>
 
 
-        <p> Fusce posuere, leo nec cursus malesuada, ligula metus finibus felis, nec fermentum leo ex vitae urna. Sed a ex maximus, sagittis mi et, faucibus nisi. Suspendisse aliquet arcu sit amet ultricies tristique. Sed convallis finibus sagittis. Mauris ullamcorper, sapien quis molestie pretium, libero metus ultrices ligula, et cursus sem arcu id felis. Aliquam augue massa, dignissim quis massa ac, efficitur volutpat est. Aliquam sit amet viverra ipsum, non fermentum sem. Sed a varius mi. Duis egestas nisi lacinia nisl porta, vel efficitur diam auctor. Donec id nunc erat. Donec non nibh dolor. Nunc in arcu et urna lacinia pellentesque consectetur nec justo. </p>
+        <p> FCA Registration No: FRN308831 </p>
+        <p> VAT No: GB820808738 </p>
+        <p> BVRLA Membership No: 1559 </p>
+        <p> Data Protection Registration No: ZA120651 </p>
+        <p> Company Registration No: 04504282 </p>
+
+        <h2> What services do we provide? </h2>
+
+        <p> We will provide you with either comparable details of firms most appropriate to your lending, purchase requirements or general information for finance products. You will be proposed to a limited panel of funders whereby a commission may be paid for doing so, this will be paid to AMT Contract Hire & Leasing Ltd by the relevant funder after delivery of the vehicle has taken place. In assessing your requirements we may seek such information about your personal circumstances and objectives as might be relevant in order to enable us to identify you needs. It is important that you provide us with accurate and relevant information. You will not receive advice, or a recommendation from us, but we may ask questions to narrow down the selection of firms offered, from which you can more easily make your own choice if you so wish.</p>
+
+        <h2> Our main selected Panel of Lenders </h2>
+
+        <table class="table amt-table table-striped">
+          <thead>
+            <tr class="text-center" style="background-color:#33414E;color:#fff;text-align:center">
+              <th> Lender: </th>
+              <th> Address </th>
+              <th> FCA No: </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ALD Automotive Ltd</td>
+              <td>Oakwood Park, Lodge Causeway, Fishponds, Bristol, BS16 3JA</td>
+              <td>571068</td>
+            </tr>
+            <tr>
+              <td>Arval UK Ltd</td>
+              <td>Arval centre, Windmill Hill, Swindon, SN5 6PE</td>
+              <td>660751</td>
+            </tr>
+            <tr>
+              <td>Hitachi Capital vehicle Solutions Ltd</td>
+              <td>Kiln house, 54a Kiln Road, Newbury, Berkshire, RG14 2NU</td>
+              <td>488110</td>
+            </tr>
+            <tr>
+              <td>Lex Autolease Ltd</td>
+              <td>Blake House, 2 Hatchford Way, Birmingham, B26 3RZ</td>
+              <td>414465</td>
+            </tr>
+            <tr>
+              <td>Leasys UK Ltd</td>
+              <td>240 Bath Road, Slough, Berkshire, SL1 4DX</td>
+              <td>312683</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2> Feedback </h2>
+
+        <p> AMT Contract Hire & Leasing Ltd always welcomes feedback from our customers, if you would like to offer any suggestions or have any concerns please contact us directly on <a href="mailto:admin@amtleasing.co.uk"> admin@AMTleasing.co.uk </a> </p>
+
+
       </div>
 
 

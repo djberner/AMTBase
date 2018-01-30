@@ -74,7 +74,7 @@
                         <input id="checkbox2" type="checkbox">
                         <label for="checkbox2"> Add Vehicle Maintenance?<br>
                         </label> <span><img src="/images/cpost_fmoreicon.png">
-                                         <b> <a href="#">Click here</a> to find our more</b></span>
+                                         <b> <a href="#">Click here</a> to find out more</b></span>
                     </div>
 
                 </div>

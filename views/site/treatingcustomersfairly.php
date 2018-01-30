@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container">
   <div class="col-md-12">
     <div class="page-title-dark">
-      <h1> Treating Customers Fairly</h1>
+      <h1> Treating Customers Fairly </h1>
     </div>
   </div>
 </div>
@@ -37,17 +37,34 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="col-sm-9">
 
       <div id="terms-and-conditions" class="terms_and_conditions_item">
-      <h2> Treating customers fairly </h2>
+
+        <p> AMT Contract Hire & Leasing Limited is fully committed to providing customers with an excellent level of service and treating customers fairly this has been at the core of our business philosophy for many years. </p>
+
+        <p> Treating Customers Fairly (TCF) is one of the cornerstone principles laid down by the Financial Conduct Authority. This guiding principle is sub-divided into six key elements which dictate the way in which we deal with our customers in terms of communication, expectations, level of service and the products and services we offer. </p>
+
+        <p> The six guiding principle elements are: </p>
+          <ul>
+            <li> Consumers are confident that they are dealing with firms where the fair treatment of customers is central to the corporate culture.</li>
+            <li> Products and services marketed and sold in the retail market place are designed to meet the needs of identified consumer groups and are targeted accordingly.</li>
+            <li> Consumers are provided with clear information and are kept appropriately informed before, during and after the point of sale.</li>
+            <li> Where consumers receive advice, the advice is suitable and takes account of their needs and circumstances.</li>
+            <li> Consumers are provided with products that perform as firms have led them to expect, and the associated service is of an acceptable standard and as they have been led to expect.</li>
+            <li> Consumers do not face unreasonable post-sale barriers imposed by firms to change product, switch provider, submit claims or make a complaint.</li>
+          </ul>
+
+          <p> In practical terms we adhere to the above principle by: </p>
+            <ul>
+              <li> Listening to our customers to understand their needs.</li>
+              <li> Offering only market products which are appropriately targeted, clear, and unambiguous, highlight the risks and conditions as well as the key features and benefits.</li>
+              <li> Ensuring Customers understand any risks associated with products and services.</li>
+              <li> Ensuring services are delivered to customers openly, with clarity and transparency and do not contain hidden conditions or complex definitions.</li>
+              <li> When, in the event of providing advice, that the advice given takes into account the customers’ needs and circumstances.</li>
+              <li> Taking the customers privacy seriously and ensuring that members of staff are trained to follow the rules in relation to data protection and to keep customers details secure and confidential.  </li>
+              <li> Taking complaints seriously and dealing with them promptly, learning from them and modifying operations and processes where necessary. </li>
+            </ul>
 
 
 
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio quam, scelerisque non lectus eget, pretium accumsan diam. Mauris congue leo magna, ut porttitor elit maximus quis. Nulla sollicitudin nulla in arcu consequat, eget auctor odio aliquam. Vivamus sodales vestibulum turpis et accumsan. Mauris scelerisque neque ac odio tempor dapibus. Maecenas sit amet mauris magna. Donec scelerisque urna eu massa commodo euismod. Nulla tincidunt lectus at tellus hendrerit, non pulvinar urna commodo. </p>
-
-
-        <p> Aliquam consequat est nulla, ut interdum ligula interdum eu. Maecenas tincidunt sem ac luctus porta. Etiam molestie pellentesque diam, quis maximus nisl pulvinar ac. Vestibulum varius venenatis faucibus. Nulla ut mollis tellus. Nullam sed dictum nisi. Cras convallis consequat egestas. Nullam id ornare arcu. Ut malesuada dolor ut est sollicitudin imperdiet. Aenean at ex facilisis, convallis elit vitae, blandit velit. Nulla non viverra lorem. Sed ac justo et lectus pellentesque dapibus. </p>
-
-
-        <p> Fusce posuere, leo nec cursus malesuada, ligula metus finibus felis, nec fermentum leo ex vitae urna. Sed a ex maximus, sagittis mi et, faucibus nisi. Suspendisse aliquet arcu sit amet ultricies tristique. Sed convallis finibus sagittis. Mauris ullamcorper, sapien quis molestie pretium, libero metus ultrices ligula, et cursus sem arcu id felis. Aliquam augue massa, dignissim quis massa ac, efficitur volutpat est. Aliquam sit amet viverra ipsum, non fermentum sem. Sed a varius mi. Duis egestas nisi lacinia nisl porta, vel efficitur diam auctor. Donec id nunc erat. Donec non nibh dolor. Nunc in arcu et urna lacinia pellentesque consectetur nec justo. </p>
       </div>
 
 

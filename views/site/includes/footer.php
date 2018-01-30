@@ -87,7 +87,7 @@ AMT Contract Hire & Leasing Ltd is subsidiary of AMT Global Investments Ltd - Re
               <li><a href="/terms-and-conditions"> Terms & conditions </a></li>
               <li><a href="/treating-customers-fairly">Treating Customers Fairly </a></li>
               <li><a href="/complaints-procedure">Complaints </a></li>
-              <li><a href="/cookie-policy"> Cookie Policy </a></li>
+              <li><a href="/privacy-policy"> Privacy Policy </a></li>
               <li><a href="/initial-disclosure">initial disclosure </a></li>
               <div class="clearfix"></div>
             </ul>
