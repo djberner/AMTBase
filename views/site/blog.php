@@ -578,6 +578,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
 </section>
 
-<?php include(CONST_ROOTDIR.'views/site/recently_viewed_vehicles.php'); ?>
+<?php include(CONST_ROOTDIR.'/views/site/recently_viewed_vehicles.php'); ?>
 
-    <?php include(CONST_ROOTDIR.'views/site/newsletter.php'); ?>
+    <?php include(CONST_ROOTDIR.'/views/site/newsletter.php'); ?>
