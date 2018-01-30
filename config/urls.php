@@ -43,7 +43,6 @@ return [
 
     'my-showroom' => 'site/myshowroom',
     [
-<<<<<<< HEAD
         'pattern' => 'resultsapis/<categories:.*>',
         'route' => 'resultsapi/category',
         'encodeParams' => false,
@@ -54,12 +53,5 @@ return [
         'encodeParams' => false,
     ],
 
-];
-=======
-    'pattern' => 'resultsapis/<categories:.*>',
-    'route' => 'resultsapi/category',
-    'encodeParams' => false,
-],
 
 ];
->>>>>>> 4860c9306139a84daa3ff8f7f3e9942cf658c9c8
