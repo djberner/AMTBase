@@ -324,103 +324,97 @@ $this->title = $page["Title"] ;
                             <div class="container">
                                 <div class="row">
 
-                                    <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow">1</span>Technical Specifications</h2>
-                                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4" style="">
-                                        <!-- THIS IS THE FIRST PRICE OPTION FIELD ITEM -->
-                                        <div class="showroom_vehicle">
+                                    <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow">1</span>Standard Equipment</h2>
+                                    <?php
+                                    for ($i = 0; $i <sizeof($product); $i++) {
 
-                                            <div class="panel-group" id="accordion">
-                                                <div class="panel panel-default">
-                                                    <div class="panel-heading">
-                                                        <h4 class="panel-title showroom_panel_title">
-                                                            <a data-toggle="collapse" data-parent="#accordion" href="#">Driver convenience </a>
-                                                        </h4>
-                                                    </div>
-                                                    <div id="collapse1" class="panel-collapse collapse in">
-                                                        <div class="panel-body">
+                                        ?>
+                                        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4" style="">
+                                            <!-- THIS IS THE FIRST PRICE OPTION FIELD ITEM -->
+                                            <div class="showroom_vehicle">
 
-                                                            <table class="table table-striped">
-                                                                <tbody>
-                                                                <tr>
-                                                                    <td>Lorem Ipsum dolor sit amet</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Lorem Ipsum dolor sit amet</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Lorem Ipsum dolor sit amet</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Lorem Ipsum dolor sit amet</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Lorem Ipsum dolor sit amet</td>
-                                                                </tr>
-                                                                </tbody>
-                                                            </table>
+                                                <div class="panel-group" id="accordion">
 
 
+
+                                                    <?php
+                                                    $previousgroup = "";
+                                                    $collapsecount = 0;
+
+                                                    foreach ($product[$i]["standard"] AS $stanequip){
+                                                    //for ($q = 0; $q < count($product[$i]["standard"][0]); $q++) {
+                                                    if ($previousgroup == "") {
+
+                                                    ?>
+
+
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title showroom_panel_title">
+                                                                <a data-toggle="collapse" data-parent="#accordion"
+                                                                   href="#collapse<?=$collapsecount.$i?>"><?=$stanequip["Derivative_Standard_Equipment_Category_Description"]?> </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapse<?=$collapsecount.$i?>" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+
+                                                                <table class="table table-striped">
+                                                                    <tbody>
+
+
+                                                        <?php
+                                                        $collapsecount= $collapsecount+1;
+                                                        }else{
+
+                                                        if ($stanequip["Derivative_Standard_Equipment_Category_Description"]!== $previousgroup) {
+                                                            ?>                                                     </tbody>
+                                                </table>
+
+
+                                                </div>
+                                                </div>
+                                                </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title showroom_panel_title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion"
+                                                                       href="#collapse<?=$collapsecount.$i?>"><?=$stanequip["Derivative_Standard_Equipment_Category_Description"]?> </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapse<?=$collapsecount.$i?>" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+
+                                                                    <table class="table table-striped">
+                                                                        <tbody>
+
+                                                            <?php
+                                                            $collapsecount= $collapsecount+1;
+                                                            }
+                                                        }
+                                                        ?>
+                                                                    <tr><td><?=$stanequip["Derivative_Standard_Equipment_Description"]?></td></tr>
+
+                                                            <?php
+                                                            $previousgroup = $stanequip["Derivative_Standard_Equipment_Category_Description"];
+                                                            }
+                                                            ?>
+                                                                    </tbody>
+                                                                </table>
+
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="panel panel-default">
-                                                    <div class="panel-heading">
-                                                        <h4 class="panel-title">
-                                                            <a data-toggle="collapse" data-parent="#accordion" href="#">Collapsible Group 2</a>
-                                                        </h4>
-                                                    </div>
-                                                    <div id="collapse2" class="panel-collapse collapse">
-                                                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="panel panel-default">
-                                                    <div class="panel-heading">
-                                                        <h4 class="panel-title">
-                                                            <a data-toggle="collapse" data-parent="#accordion" href="#">Collapsible Group 3</a>
-                                                        </h4>
-                                                    </div>
-                                                    <div id="collapse3" class="panel-collapse collapse">
-                                                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- THIS IS THE END OF THE FIRST PRICE OPTION FIELD ITEM -->
-                                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4" style="">
-
-                                        <div class="showroom_vehicle unselected">
-
-                                            <figure>
-                                                <img class="center-block" src="/images/icon1.png">
-                                            </figure>
-
-                                            <div class="item_spofrname text-center">
-                                                <h4> No vehicle selected </h4>
-                                                <p> Search for a vehicle below or select "Compare in My Showroom" on a vehicle listing. </p>
                                             </div>
                                         </div>
 
-                                    </div>
-                                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4" style="">
 
-                                        <div class="showroom_vehicle unselected">
 
-                                            <figure>
-                                                <img class="center-block" src="/images/icon1.png">
-                                            </figure>
-
-                                            <div class="item_spofrname text-center">
-                                                <h4> No vehicle selected </h4>
-                                                <p> Search for a vehicle below or select "Compare in My Showroom" on a vehicle listing. </p>
-                                            </div>
-
-                                        </div>
+                                                        <?php
+                                                        }
+                                                        ?>
+                                                        <!-- THIS IS THE END OF THE FIRST PRICE OPTION FIELD ITEM -->
 
                                     </div>
 
